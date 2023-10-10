@@ -4,7 +4,7 @@
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Erste Mannschaft</h1>
     </div>
     <div>
-        <img src="images/erste-mannschaft_optimiert.jpg" alt="erste mannschaft">
+        <img src="/images/erste-mannschaft_optimiert.jpg" alt="erste mannschaft">
     </div>
 
     <!-- TODO: durch iframe ersetzen -->

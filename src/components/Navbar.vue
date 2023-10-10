@@ -9,7 +9,7 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center p-4">
                 <RouterLink to="/">
-                    <img src="images/logo-adler.jpg" class="h-20 lg:h-32" alt="ASC Geretsried Logo Adler">
+                    <img src="/images/logo-adler.jpg" class="h-20 lg:h-32" alt="ASC Geretsried Logo Adler">
                 </RouterLink>
                 <!-- TODO: adapt h1 color, seems to be to dark -->
                 <h1>
@@ -17,9 +17,9 @@
                 </h1>
             </div>
             <div class="hidden lg:flex">
-                <a class="p-4" href="https://www.instagram.com/Ascgeretsried"><img src="images/insta-icon.svg"
+                <a class="p-4" href="https://www.instagram.com/Ascgeretsried"><img src="/images/insta-icon.svg"
                         style="width:40px" alt="Instagram Icon"></a>
-                <a class="p-4" href="https://web.facebook.com/GeretsriederAdler"><img src="images/fb-icon.png"
+                <a class="p-4" href="https://web.facebook.com/GeretsriederAdler"><img src="/images/fb-icon.png"
                         style="width:40px" alt="Facebook Icon"></a>
             </div>
             <div class="block lg:hidden p-4 mr-4">
