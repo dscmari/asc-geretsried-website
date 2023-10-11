@@ -1,3 +1,3 @@
 <template>
-    <h1>hello sponsors</h1>
+    <h1>hello sponsors view</h1>
 </template>

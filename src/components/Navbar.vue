@@ -53,13 +53,13 @@
                     <RouterLink to="/futsal" class="router-link">Futsal</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="#" class="router-link">Vorstandschaft</RouterLink>
+                    <RouterLink to="/vorstandschaft" class="router-link">Vorstandschaft</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="/sponsoren" class="router-link">Sponsoren</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="#" class="router-link">Geschichte</RouterLink>
+                    <RouterLink to="/geschichte" class="router-link">Geschichte</RouterLink>
                 </li>
             </ul>
         </div>

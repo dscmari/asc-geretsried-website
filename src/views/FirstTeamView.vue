@@ -94,19 +94,19 @@
         <h1 class="p-4 pb-0 lg:pt-8 lg:pl-0 text-2xl font-semibold text-ascBlue">Trainingszeiten</h1>
         <div class="p-4">
             <div class="p-2">
-                <h2>Sommer</h2>
+                <h2>Sommer:</h2>
                 <ul>
-                    <li>Am Forst oder Böhmwiese</li>
-                    <li>Mo: 19.30 – 21.00 Uhr</li>
-                    <li>Mi: 19.30 – 21.00 Uhr</li>
+                    <li class="p-1">Am Forst oder Böhmwiese</li>
+                    <li class="p-1">Mo 19.30 – 21.00 Uhr</li>
+                    <li class="p-1">Mi 19.30 – 21.00 Uhr</li>
                 </ul>
             </div>
             <div class="p-2">
-                <h2>Winter</h2>
+                <h2>Winter:</h2>
                 <ul>
-                    <li>Kunstrasen</li>
-                    <li>Di: 20.30 – 22.00 Uhr</li>
-                    <li>Do: 20.30 – 22.00 Uhr</li>
+                    <li class="p-1">Kunstrasen</li>
+                    <li class="p-1">Di 20.30 – 22.00 Uhr</li>
+                    <li class="p-1">Do 20.30 – 22.00 Uhr</li>
                 </ul>
             </div>
             
