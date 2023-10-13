@@ -1,10 +1,4 @@
-<!-- <script setup>
-    import { RouterLink} from 'vue-router'
-</script> -->
-
 <template>
-    <!-- TODO: use boolean to check if the navbar is mobile or desktop? does this approach make sense? -->
-
     <div class="w-full">
         <div class="flex items-center justify-between">
             <div class="flex items-center p-4">
@@ -41,25 +35,25 @@
             <ul class="p-4 text-xl bg-ascBlue text-white fixed top-0 left-0 w-3/4 lg:static lg:flex lg:w-full lg:p-0"
                 v-on:click="toggleMenu()">
                 <li :class="isMobileView ? 'block' : 'hidden'">
-                    <RouterLink to="/" class="router-link">Home</RouterLink>
+                    <RouterLink to="/" class="router-link" :class="isCurrentPath('/') ? 'nav-active-link' : ''">Home</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/erste-mannschaft" class="router-link">1. Mannschaft</RouterLink>
+                    <RouterLink to="/erste-mannschaft" class="router-link" :class="isCurrentPath('/erste-mannschaft') ? 'nav-active-link' : ''">1. Mannschaft</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/zweite-mannschaft" class="router-link">2. Mannschaft</RouterLink>
+                    <RouterLink to="/zweite-mannschaft" class="router-link" :class="isCurrentPath('/zweite-mannschaft') ? 'nav-active-link' : ''">2. Mannschaft</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/futsal" class="router-link">Futsal</RouterLink>
+                    <RouterLink to="/futsal" class="router-link" :class="isCurrentPath('/futsal') ? 'nav-active-link' : ''">Futsal</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/vorstandschaft" class="router-link">Vorstandschaft</RouterLink>
+                    <RouterLink to="/vorstandschaft" class="router-link" :class="isCurrentPath('/vorstandschaft') ? 'nav-active-link' : ''">Vorstandschaft</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/sponsoren" class="router-link">Sponsoren</RouterLink>
+                    <RouterLink to="/sponsoren" class="router-link" :class="isCurrentPath('/sponsoren') ? 'nav-active-link' : ''">Sponsoren</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/geschichte" class="router-link">Geschichte</RouterLink>
+                    <RouterLink to="/geschichte" class="router-link" :class="isCurrentPath('/geschichte') ? 'nav-active-link' : ''">Geschichte</RouterLink>
                 </li>
             </ul>
         </div>
@@ -76,7 +70,10 @@ export default {
     },
     methods: {
         isCurrentPath(path) {
-            return window.location.pathname === path;
+            const pathArray = window.location.pathname.split('/');
+            const indexLastSlash = pathArray.length - 1;
+            const lastIndex = pathArray[indexLastSlash]
+            return "/"+lastIndex === path;
         },
 
         toggleMenu() {
@@ -110,6 +107,9 @@ li {
     padding: 1rem;
 }
 
+.nav-active-link{
+    text-decoration: underline;
+}
 
 .upper.open {
     top: 18px;
@@ -134,89 +134,4 @@ li {
 }
 </style>
 
-<!-- <style scoped>
-/* @media screen and (max-width: 768px) {
-    .flex-container div{
-        display: flex;
-        align-items: center;
-    }
-
-    .social-icons{
-        display: none;
-        background-color: red;
-    }
-    .nav-container {
-
-        position: absolute;
-        width: 100%;
-    }
-
-    .open-menu {
-        opacity: 1;
-        height: 150px;
-    }
-
-    .nav-content {
-        flex-direction: column;
-        z-index: 100;
-        position: relative;
-        transition: all 0.2s ease-out;
-        background-color: var(--asc-dark-blue);
-    }
-
-    .nav-items {
-        flex-direction: column;
-
-
-    }
-
-    .social-icons {
-        display: none;
-    }
-
-    li {
-        padding: 4px;
-    }
-} */
-/* .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.flex-container>div:nth-child(1) {
-    display: flex;
-    align-items: center;
-}
-
-.nav-items {
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    color: #ffffff;
-    font-size: larger;
-}
-
-h1>.router-link {
-    color: var(--asc-dark-blue);
-    font-weight: bold;
-}
-
-li>.router-link {
-    color: #ffffff;
-}
-
-li {
-    padding: 16px;
-}
-
-.nav-items {
-    background-color: #080F29;
-}
-
-div a {
-    margin: 10px;
-} */
-
-/* mobile menu */
 </style> -->
