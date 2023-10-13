@@ -3,8 +3,9 @@
         <div class="w-10 h-1 bg-ascBlue"></div>
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Zweite Mannschaft</h1>
     </div>
-
-    <!-- TODO: insert img -->
+    <div>
+        <img src="/images/zweite-mannschaft.jpg" alt="erste mannschaft">
+    </div>
 
     <!-- TODO: durch iframe ersetzen -->
     <div>
