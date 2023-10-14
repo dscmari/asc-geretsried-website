@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div :class="isActive ? 'opacity-90' : 'opacity-0'"
+        <div :class="isActive ? 'opacity-90' : 'opacity-0'" :style="{pointerEvents: isClickable}"
             class="transition-opacity duration-500 ease-in-out lg:opacity-100">
             <ul class="p-4 text-xl bg-ascBlue text-white fixed top-0 left-0 w-3/4 lg:static lg:flex lg:w-full lg:p-0"
                 v-on:click="toggleMenu()">
@@ -90,13 +90,18 @@ export default {
             }
         }
     },
+    computed: {
+        isClickable(){
+            return this.isMobileView ? this.isActive ? 'auto' : 'none'  :  'auto';
+        }
+    },
     mounted() {
         // Update isMobileView when the component is mounted
-        this.isMobileView = window.innerWidth < 768;
+        this.isMobileView = window.innerWidth < 1024;
 
         // Add a resize event listener to update isMobileView when the window is resized
         window.addEventListener('resize', () => {
-            this.isMobileView = window.innerWidth < 768;
+            this.isMobileView = window.innerWidth < 1024;
         });
     }
 };
