@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center p-4">
                 <RouterLink to="/">
-                    <img src="/images/logo-adler.jpg" class="h-20 lg:h-32" alt="ASC Geretsried Logo Adler">
+                    <img src="/images/logo-adler.webp" class="h-20 lg:h-32" alt="ASC Geretsried Logo Adler">
                 </RouterLink>
                 <!-- TODO: adapt h1 color, seems to be to dark -->
                 <h1>
@@ -11,7 +11,7 @@
                 </h1>
             </div>
             <div class="hidden lg:flex">
-                <a class="p-4" href="https://www.instagram.com/Ascgeretsried"><img src="/images/insta-icon.svg"
+                <a class="p-4" href="https://www.instagram.com/Ascgeretsried"><img src="/images/insta-icon.webp"
                         style="width:40px" alt="Instagram Icon"></a>
                 <a class="p-4" href="https://web.facebook.com/GeretsriederAdler"><img src="/images/fb-icon.png"
                         style="width:40px" alt="Facebook Icon"></a>
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div :class="isActive ? 'opacity-90' : 'opacity-0'"
+        <div :class="isActive ? 'opacity-90' : 'opacity-0'" :style="{pointerEvents: isClickable}"
             class="transition-opacity duration-500 ease-in-out lg:opacity-100">
             <ul class="p-4 text-xl bg-ascBlue text-white fixed top-0 left-0 w-3/4 lg:static lg:flex lg:w-full lg:p-0"
                 v-on:click="toggleMenu()">
@@ -90,6 +90,11 @@ export default {
             }
         }
     },
+    computed: {
+        isClickable(){
+            return this.isActive ? 'auto' : 'none';
+        }
+    },
     mounted() {
         // Update isMobileView when the component is mounted
         this.isMobileView = window.innerWidth < 768;
@@ -133,5 +138,3 @@ li {
     transition: .5s ease-in-out;
 }
 </style>
-
-</style> -->
