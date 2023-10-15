@@ -112,6 +112,15 @@ li {
     padding: 1rem;
 }
 
+.router-link{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.router-link:hover{
+    color: #080F29; 
+    box-shadow: inset 200px 0 0 0 #fff;;
+}
+
 .nav-active-link{
     text-decoration: underline;
 }
