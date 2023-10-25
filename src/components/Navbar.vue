@@ -7,7 +7,7 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center p-4">
                 <RouterLink to="/">
-                    <img src="/images/logo-adler.webp" class="h-20 lg:h-32" alt="ASC Geretsried Logo Adler">
+                    <img src="/images/logo-adler.webp" class="h-20 lg:h-32 min-w-[80px]" alt="ASC Geretsried Logo Adler">
                 </RouterLink>
                 <!-- TODO: adapt h1 color, seems to be to dark -->
                 <h1>
