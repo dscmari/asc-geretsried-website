@@ -6,6 +6,7 @@ import FutsalView from '../views/FutsalView.vue'
 import BoardView from '../views/BoardView.vue'
 import SponsorsView from '../views/SponsorsView.vue'
 import HistoryView from '../views/HistoryView.vue'
+import NewMemberView from '../views/NewMemberView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: '/geschichte',
       name: 'geschichte',
       component: HistoryView
+    },
+    {
+      path: '/mitglied-werden',
+      name: 'mitglied-werden',
+      component: NewMemberView
     }
   ]
 })

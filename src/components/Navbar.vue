@@ -5,20 +5,20 @@
 <template>
     <div class="w-full">
         <div class="flex items-center justify-between">
-            <div class="flex items-center p-4">
+            <div class="flex items-center p-2">
                 <RouterLink to="/">
-                    <img src="/images/logo-adler.webp" class="h-20 lg:h-32 min-w-[80px]" alt="ASC Geretsried Logo Adler">
+                    <img src="/images/logo.webp" alt="ASC Geretsried Logo Adler" class="m-2" :style="{ width: isMobileView ? '35px' : '50px'}">
                 </RouterLink>
                 <!-- TODO: adapt h1 color, seems to be to dark -->
-                <h1>
-                    <RouterLink to="/" class="text-ascBlue text-xl font-semibold lg:text-4xl">ASC GERETSRIED</RouterLink>
+                <h1 class="text-ascLogoBlue text-lg lg:text-2xl lg:ml-4 ">
+                    <RouterLink class="font-semibold" to="/">ASC Geretsried</RouterLink>
                 </h1>
             </div>
             <div class="hidden lg:flex">
                 <a class="p-4" href="https://www.instagram.com/Ascgeretsried"><img src="/images/insta-icon.webp"
-                        style="width:40px" alt="Instagram Icon"></a>
+                        style="width:30px; height:auto" alt="Instagram Icon"></a>
                 <a class="p-4" href="https://web.facebook.com/GeretsriederAdler"><img src="/images/fb-icon.png"
-                        style="width:40px" alt="Facebook Icon"></a>
+                        style="width:30px; height:auto" alt="Facebook Icon"></a>
             </div>
             <div class="block lg:hidden p-4 mr-4">
                 <div class="flex items-center border-black hover:text-grey hover:border-grey" >
@@ -32,12 +32,13 @@
                             class="lower block absolute h-[3px] w-full bg-black rounded opacity-100 right-0 transform rotate-0 transition ease-in-out duration-250 top-6"></span>
                     </div>
                 </div>
-            </div>
+            </div>   
         </div>
-        <div :class="isActive ? 'opacity-95' : 'opacity-0'" :style="{pointerEvents: isClickable}"
-            class="transition-opacity duration-500 ease-in-out lg:opacity-100">
-            <ul class="p-4 pt-8 text-3xl lg:text-xl bg-ascBlue text-white text-center w-full absolute top-0 left-0 lg:static lg:flex lg:p-0 lg:pl-4 lg:pt-0 zoomable">
-                <li :class="isMobileView ? 'block' : 'hidden'">
+        <div :style="{ width: isActive ? '75%' : '' }"
+        class="fixed top-0 left-0 w-0 opacity-90 whitespace-nowrap transform overflow-x-hidden -translate-x-0 ease-in-out transition-all duration-300 
+         lg:static lg:w-full lg:overflow-visible lg:opacity-100">
+            <ul class="text-3xl w-full lg:flex lg:justify-evenly lg:text-xl text-white bg-ascBlue text-center zoomable ">
+                <li :class="isMobileView ? 'block' : 'hidden'" class="pt-8">
                     <RouterLink to="/" class="router-link" :class="{ 'active': activeNavItem === 'home' }" v-on:click="toggleMenu()">Home</RouterLink>
                 </li>
                 <li @mouseenter="submenuIsOpenTeam1 = true" @mouseleave="submenuIsOpenTeam1 = false">
@@ -58,19 +59,9 @@
                 <li>
                     <RouterLink to="/geschichte" class="router-link" :class="{ 'active': activeNavItem === 'history' }" v-on:click="toggleMenu()">Geschichte</RouterLink>
                 </li>
-                <div class="block lg:hidden p-4 mr-4">
-                    <div class="flex items-center border-black hover:text-grey hover:border-grey">
-                        <div
-                            class="w-14 h-10 relative my-12 mx-auto transform rotate-0 transition ease-in-out duration-500 cursor-pointer" v-on:click="toggleMenu()">
-                            <span
-                                class="open upper block absolute h-[3px] w-full bg-white rounded opacity-100 right-0 transform rotate-0 transition ease-in-out duration-250 top-0"></span>
-                            <span
-                                class="open middle block absolute h-[3px] w-full bg-white rounded opacity-100 right-0 transform rotate-0 ease-in-out duration-250 top-3"></span>
-                            <span
-                                class="open lower block absolute h-[3px] w-full bg-white rounded opacity-100 right-0 transform rotate-0 transition ease-in-out duration-250 top-6"></span>
-                        </div>
-                    </div>
-                </div>
+                <li class="pb-8 lg:pb-0">
+                    <RouterLink to="/mitglied-werden" class="router-link" :class="{ 'active': activeNavItem === 'mitglied-werden' }" v-on:click="toggleMenu()">Mitglied werden</RouterLink>
+                </li>
             </ul>
             <div v-if="!isMobileView" class="relative">
                 <Submenu v-if="activeNavItem === 'erste-mannschaft'" :isOpen="submenuIsOpenTeam1">
@@ -124,13 +115,17 @@ export default {
                 this.activeNavItem = 'sponsors';
             } else if (path === '/geschichte') {
                 this.activeNavItem = 'history';
+            } else if(path === '/mitglied-werden'){
+                this.activeNavItem = 'mitglied-werden'
             }
         },
 
         toggleMenu() {
             console.log("toggleMenu() loaded")
-            this.isActive = !this.isActive;
-            this.showX();
+            if(this.isMobileView){
+                this.isActive = !this.isActive;
+                this.showX();
+            }
         },
 
         showX() {
@@ -161,8 +156,13 @@ export default {
 </script>
 
 <style>
+h1{
+    font-family: 'Anton', sans-serif;
+}
+
 li {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+
 }
 
 .zoomable > li:hover {

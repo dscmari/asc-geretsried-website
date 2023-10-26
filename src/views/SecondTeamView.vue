@@ -9,7 +9,7 @@
 
     <!-- TODO: durch iframe ersetzen -->
     <div>
-        <h1 id="league-2" class="p-4 lg:pt-16 lg:pl-0 text-2xl font-semibold text-[#080F29]">Liga & Tabelle</h1>
+        <h1 id="league-2" class="p-4 lg:pt-16 lg:pl-0 text-2xl font-semibold text-ascBlue">Liga & Tabelle</h1>
         <ul class="p-4 pt-0 text-xl">
             <li class="p-1 underline"><a href="https://www.bfv.de/mannschaften/asc-geretsried-ii/02IDHF83IG000000VS5489B2VU2I8R4H" target="_blank">Kommende Spiele</a></li>
             <li class="p-1 underline"><a href="https://www.bfv.de/wettbewerbe/meisterschaften/c-klasse-gruppe-7/02LRRN8PP400001AVS5489B4VUAB0UC4-G#tabelle" target="_blank">Tabelle</a></li>
@@ -17,7 +17,7 @@
     </div>
 
     <div>
-        <h1 id="team-2" class="p-4 lg:pt-8 lg:pl-0 text-2xl font-semibold text-[#080F29]">Kader</h1>
+        <h1 id="team-2" class="p-4 lg:pt-8 lg:pl-0 text-2xl font-semibold text-ascBlue">Kader</h1>
         <div class="text-xl m-4 pt-0">
             <div class="p-2 pl-6 bg-slate-200">
                 <table>

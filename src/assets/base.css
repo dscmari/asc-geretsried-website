@@ -7,6 +7,13 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Anton';
+  src: url('~@/assets/fonts/Anton-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   min-height: 100vh;
   transition:
