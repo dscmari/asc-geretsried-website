@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-3xl text-center my-16">Wir bedanken und bei unseren Sponsoren!</h1>
+    <h2 class="text-2xl text-center my-16">Wir bedanken und bei unseren Sponsoren!</h2>
     <div class="md:grid md:grid-cols-2">
         <div class="img-container">
             <img src="/images/sponsors/gajtani.jpg" alt="Gajtani Estriche">

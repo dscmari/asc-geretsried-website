@@ -3,14 +3,14 @@
 </script>
 
 <template>
-    <div class="w-full">
+    <div class="w-full pt-4">
         <div class="flex items-center justify-between">
             <div class="flex items-center p-2">
                 <RouterLink to="/">
                     <img src="/images/logo.webp" alt="ASC Geretsried Logo Adler" class="m-2" :style="{ width: isMobileView ? '35px' : '50px'}">
                 </RouterLink>
                 <!-- TODO: adapt h1 color, seems to be to dark -->
-                <h1 class="text-ascLogoBlue text-lg lg:text-2xl lg:ml-4 ">
+                <h1 class="text-ascBlue text-lg lg:text-2xl lg:ml-4 ">
                     <RouterLink class="font-semibold" to="/">ASC Geretsried</RouterLink>
                 </h1>
             </div>
@@ -23,7 +23,7 @@
             <div class="block lg:hidden p-4 mr-4">
                 <div class="flex items-center border-black hover:text-grey hover:border-grey" >
                     <div
-                        class="js-burgermenu w-9 h-7 relative my-12 mx-auto transform rotate-0 transition ease-in-out duration-500 cursor-pointer" v-on:click="toggleMenu()">
+                        class="js-burgermenu w-9 h-7 relative  mx-auto transform rotate-0 transition ease-in-out duration-500 cursor-pointer" v-on:click="toggleMenu()">
                         <span
                             class="upper block absolute h-[3px] w-full bg-black rounded opacity-100 right-0 transform rotate-0 transition ease-in-out duration-250 top-0"></span>
                         <span
@@ -36,8 +36,8 @@
         </div>
         <div :style="{ width: isActive ? '75%' : '' }"
         class="fixed top-0 left-0 w-0 opacity-90 whitespace-nowrap transform overflow-x-hidden -translate-x-0 ease-in-out transition-all duration-300 
-         lg:static lg:w-full lg:overflow-visible lg:opacity-100">
-            <ul class="text-3xl w-full lg:flex lg:justify-evenly lg:text-xl text-white bg-ascBlue text-center zoomable ">
+         lg:static lg:w-full lg:overflow-visible lg:opacity-100 z-40">
+            <ul class="text-xl lg:text-lg xl:text-xl w-full lg:flex lg:justify-evenly text-white bg-ascBlue text-center zoomable ">
                 <li :class="isMobileView ? 'block' : 'hidden'" class="pt-8">
                     <RouterLink to="/" class="router-link" :class="{ 'active': activeNavItem === 'home' }" v-on:click="toggleMenu()">Home</RouterLink>
                 </li>

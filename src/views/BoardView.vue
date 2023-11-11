@@ -1,6 +1,6 @@
 <template>
-    <h1 class="text-3xl lg:pl-6 my-8">Die Vorstandschaft des ASC Geretsried e.V.</h1>
-    <p class="text-xl lg:pl-6">
+    <h2 class="text-2xl p-4 lg:pl-6 my-8">Die Vorstandschaft des ASC Geretsried e.V.</h2>
+    <p class="text-md p-4 lg:pl-6">
         Bei Fragen meldet euch gerne bei uns über die Handynummern oder über unsere E-Mail Adresse: <b>info@asc-geretsried.de</b>
     </p>
 

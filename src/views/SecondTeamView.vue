@@ -9,16 +9,16 @@
 
     <!-- TODO: durch iframe ersetzen -->
     <div>
-        <h1 id="league-2" class="p-4 lg:pt-16 lg:pl-0 text-2xl font-semibold text-ascBlue">Liga & Tabelle</h1>
-        <ul class="p-4 pt-0 text-xl">
+        <h1 id="league-2" class="p-4 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
+        <ul class="p-4 pt-0 text-lg">
             <li class="p-1 underline"><a href="https://www.bfv.de/mannschaften/asc-geretsried-ii/02IDHF83IG000000VS5489B2VU2I8R4H" target="_blank">Kommende Spiele</a></li>
             <li class="p-1 underline"><a href="https://www.bfv.de/wettbewerbe/meisterschaften/c-klasse-gruppe-7/02LRRN8PP400001AVS5489B4VUAB0UC4-G#tabelle" target="_blank">Tabelle</a></li>
         </ul>  
     </div>
 
     <div>
-        <h1 id="team-2" class="p-4 lg:pt-8 lg:pl-0 text-2xl font-semibold text-ascBlue">Kader</h1>
-        <div class="text-xl m-4 pt-0">
+        <h1 id="team-2" class="p-4 lg:pt-8 lg:pl-0 text-lg font-semibold text-ascBlue">Kader</h1>
+        <div class="text-lg m-4 pt-0">
             <div class="p-2 pl-6 bg-slate-200">
                 <table>
                     <thead><tr>Coach:</tr></thead>
@@ -91,7 +91,7 @@
     </div>
 
     <div>
-        <h1 id="training-2" class="p-4 pb-0 lg:pt-8 lg:pl-0 text-2xl font-semibold text-ascBlue">Trainingszeiten</h1>
+        <h1 id="training-2" class="p-4 pb-0 lg:pt-8 lg:pl-0 text-lg font-semibold text-ascBlue">Trainingszeiten</h1>
         <div class="p-4">
             <div class="p-2">
                 <h2>Sommer:</h2>

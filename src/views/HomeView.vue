@@ -7,18 +7,14 @@ import TheWelcome from '../components/TheWelcome.vue'
     <img class="object-cover" src="/images/aufstieg_2023_optimiert.jpg" alt="">
   </div>
 
-  <div class="py-4">
-            <h1 class="text-center p-6 text-3xl italic">"Jeder für Jeden!"</h1>
-            <p>kurze asc beschreibung <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae neque 
-                illum cumque sit quod, dicta vero, eveniet aut ducimus ut facilis quis suscipit. Quod cum dolore blanditiis, 
-                ad vitae voluptatem.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae neque 
-                illum cumque sit quod, dicta vero, eveniet aut ducimus ut facilis quis suscipit. Quod cum dolore blanditiis, 
-                ad vitae voluptatem.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae neque 
-                illum cumque sit quod, dicta vero, eveniet aut ducimus ut facilis quis suscipit. Quod cum dolore blanditiis, 
-                ad vitae voluptatem.
+  <div class="p-4">
+            <h2 class="text-lg font-semibold my-6">
+              Ihr fragt euch, wie unser Verein entstanden ist und für was wir stehen? Dann seid ihr hier genau richtig!
+            </h2>
+            <p class="text-md">
+              Ziemlich beste Freunde hatten im Jahr 2016 die Idee, einen eigenen Fußballverein zu gründen, im Fokus stand dabei, diesen nach ihren Werten und Ansprüchen zu gestalten und zu führen. 
+              Aus dieser Idee wurde am 03. März 2016 Realität. An diesem Tag wurde der ASC Geretsried offiziell gegründet und steht seitdem für die festgelegten Werte ein. 
+              Wir möchten all denen eine Heimat bieten, denen Freundschaft, Loyalität, Spaß am Sport und die Gemeinschaft wichtig sind. Wir sind fest davon überzeugt, dass diese Werte weitaus wichtiger sind als der vergängliche sportliche Erfolg.
             </p>
         </div>
 </template>
