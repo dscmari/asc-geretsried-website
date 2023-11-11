@@ -7,7 +7,7 @@
     <div class="my-4 flex flex-row justify-evenly flex-wrap">
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Marius Wedderwille">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Marius Wedderwille">
             </div>
             <div>
                 <p>1. Vorstand</p>
@@ -17,7 +17,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>2. Vorstand</p>
@@ -27,7 +27,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>Kassierer</p>
@@ -37,7 +37,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>Schriftführer</p>
@@ -47,7 +47,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>1. Technischer Leiter</p>
@@ -57,7 +57,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>2. Technischer Leiter</p>
@@ -67,7 +67,7 @@
         </div>
         <div class="my-6 p-6">
             <div class="py-4">
-                <img class="h-80" src="images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>Pressesprecher</p>
