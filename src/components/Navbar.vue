@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="w-full pt-4">
+    <div class="w-full pt-4 sticky top-0 bg-white">
         <div class="flex items-center justify-between">
             <div class="flex items-center p-2">
                 <RouterLink to="/">

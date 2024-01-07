@@ -1,13 +1,13 @@
 <template>
-    <h2 class="text-2xl p-4 lg:pl-6 my-8">Die Vorstandschaft des ASC Geretsried e.V.</h2>
+    <h2 class="text-2xl p-4 lg:pl-6 my-2">Die Vorstandschaft des ASC Geretsried e.V.</h2>
     <p class="text-md p-4 lg:pl-6">
         Bei Fragen meldet euch gerne bei uns über die Handynummern oder über unsere E-Mail Adresse: <b>info@asc-geretsried.de</b>
     </p>
 
-    <div class="my-4 flex flex-row justify-evenly flex-wrap">
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Marius Wedderwille">
+    <div class="flex flex-row justify-evenly flex-wrap gap-4 lg:gap-12">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/vorstand_moe.jpeg" alt="Erster Vorstand Marius Wedderwille">
             </div>
             <div>
                 <p>1. Vorstand</p>
@@ -15,9 +15,9 @@
                 <p>Tel.: 0172 8552431</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/vorstand_cem.jpeg" alt="Zweiter Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>2. Vorstand</p>
@@ -25,9 +25,9 @@
                 <p>Tel.: 0157 72033285</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Kassierer Phil Malzacher">
             </div>
             <div>
                 <p>Kassierer</p>
@@ -35,9 +35,9 @@
                 <p>Tel.: 0151 62671753</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/vorstand_tasso.jpeg" alt="Schriftführer Anastasios Lasidis">
             </div>
             <div>
                 <p>Schriftführer</p>
@@ -45,9 +45,9 @@
                 <p>Tel.: 0157 30711065</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Erster Technischer Leiter Florian Krone">
             </div>
             <div>
                 <p>1. Technischer Leiter</p>
@@ -55,9 +55,9 @@
                 <p>Tel.: 0151 72131310</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Zweiter Technischer Leiter Manuel Schneider">
             </div>
             <div>
                 <p>2. Technischer Leiter</p>
@@ -65,9 +65,9 @@
                 <p>Tel.: 0172 7428679</p>
             </div>
         </div>
-        <div class="my-6 p-6">
-            <div class="py-4">
-                <img class="h-80" src="/images/platzhalter.jpg" alt="Erster Vorstand Cem Acikbas">
+        <div>
+            <div class="py-2">
+                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Pressesprecher Panagiotis Zormpas">
             </div>
             <div>
                 <p>Pressesprecher</p>
