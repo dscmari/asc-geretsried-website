@@ -7,7 +7,7 @@
     <div class="flex flex-row justify-evenly flex-wrap gap-4 lg:gap-12">
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/vorstand_moe.jpeg" alt="Erster Vorstand Marius Wedderwille">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/moe.jpg" alt="Erster Vorstand Marius Wedderwille">
             </div>
             <div>
                 <p>1. Vorstand</p>
@@ -17,7 +17,7 @@
         </div>
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/vorstand_cem.jpeg" alt="Zweiter Vorstand Cem Acikbas">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/cem.jpg" alt="Zweiter Vorstand Cem Acikbas">
             </div>
             <div>
                 <p>2. Vorstand</p>
@@ -27,7 +27,7 @@
         </div>
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Kassierer Phil Malzacher">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/phil.jpg" alt="Kassierer Phil Malzacher">
             </div>
             <div>
                 <p>Kassierer</p>
@@ -37,7 +37,7 @@
         </div>
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/vorstand_tasso.jpeg" alt="Schriftführer Anastasios Lasidis">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/tasso.jpg" alt="Schriftführer Anastasios Lasidis">
             </div>
             <div>
                 <p>Schriftführer</p>
@@ -47,7 +47,7 @@
         </div>
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Erster Technischer Leiter Florian Krone">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/flo.jpg" alt="Erster Technischer Leiter Florian Krone">
             </div>
             <div>
                 <p>1. Technischer Leiter</p>
@@ -57,7 +57,7 @@
         </div>
         <div>
             <div class="py-2">
-                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Zweiter Technischer Leiter Manuel Schneider">
+                <img class="h-80 w-60" src="/images/board-imgs-tiny/manu.jpg" alt="Zweiter Technischer Leiter Manuel Schneider">
             </div>
             <div>
                 <p>2. Technischer Leiter</p>
