@@ -8,20 +8,22 @@
             Nachbarvereinen vertreten sind, spielt aktuell in der Bayernliga, der dritthöchsten Liga bundesweit.
         </p>
         <p>
-            Nicht nur Spieler vom ASC, sondern auch Jungs von Nachbarvereinen wie Eurasburg, TuS und FF kicken zusammen für die
+            Nicht nur Spieler vom ASC, sondern auch Jungs von Nachbarvereinen wie TuS, Eurasburg und FC kicken zusammen für die
             Adler in der Halle 💪🏽🔥
         </p>
     </div>
     <div>
         <h2 class="p-4 pb-0 lg:pt-8 lg:pl-0 text-lg font-semibold">Trainingszeiten</h2>
-        <div class="">
-            <div class="p-2 pl-0">
-                <h2>Von November bis Februar in der Halle der Karl-Lederer Grundschule in Geretsried</h2>
-                <ul>
-                    <li class="p-1 pl-0">Mo 20.30 – 22.00 Uhr</li>
-                    <li class="p-1 pl-0">Mi 21.00 – 22.00 Uhr</li>
-                </ul>
-            </div>
+        <div class="p-2 pl-0">
+            <h2>Von November bis Februar in der Halle der Karl-Lederer Grundschule in Geretsried</h2>
+            <ul>
+                <li class="p-1">Mo 20.30 – 22.00 Uhr</li>
+                <li class="p-1">Mi 21.00 – 22.00 Uhr</li>
+            </ul>
         </div>
+        <h2 class="p-4 pb-0 lg:pt-4 lg:pl-0 text-lg font-semibold">Verantwortlicher ASC-Futsal:</h2>
+        <p>Panagiotis Zormpas</p>
+        <h2 class="p-4 pb-0 lg:pt-4 lg:pl-0 text-lg font-semibold">Coach ASC-Futsal:</h2>
+        <p>Tasso Lasidis</p>
     </div>
 </template>

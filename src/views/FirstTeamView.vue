@@ -105,7 +105,7 @@
                 <h2>Winter:</h2>
                 <ul>
                     <li class="p-1">Kunstrasen</li>
-                    <li class="p-1">Di 20.30 – 22.00 Uhr</li>
+                    <li class="p-1">Mo 20.30 – 22.00 Uhr</li>
                     <li class="p-1">Do 20.30 – 22.00 Uhr</li>
                 </ul>
             </div>
