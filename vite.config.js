@@ -11,6 +11,10 @@ export default defineConfig({
     vue(),
     CompressionPlugin()
   ],
+  server: {
+    // Add this configuration to handle history fallback
+    historyApiFallback: true,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
