@@ -4,7 +4,7 @@ import Submenu from './Submenu.vue';
 </script>
 
 <template>
-    <div class="w-full pt-4 sticky top-0 bg-white">
+    <div class="w-full pt-4 sticky top-0 bg-white z-10">
         <div class="flex items-center justify-between">
             <div class="flex items-center p-2">
                 <RouterLink to="/">
