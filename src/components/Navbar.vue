@@ -1,5 +1,6 @@
 <script setup>
-    import Submenu from './Submenu.vue';
+    import { RouterLink } from 'vue-router';
+import Submenu from './Submenu.vue';
 </script>
 
 <template>
@@ -38,41 +39,69 @@
         class="fixed top-0 left-0 w-0 opacity-90 whitespace-nowrap transform overflow-x-hidden -translate-x-0 ease-in-out transition-all duration-300 
          lg:static lg:w-full lg:overflow-visible lg:opacity-100 z-40">
             <ul class="text-xl lg:text-lg xl:text-xl w-full lg:flex lg:justify-evenly text-white bg-ascBlue text-center zoomable ">
-                <li :class="isMobileView ? 'block' : 'hidden'" class="pt-8">
-                    <RouterLink to="/" class="router-link" :class="{ 'active': activeNavItem === 'home' }" v-on:click="toggleMenu()">Home</RouterLink>
-                </li>
-                <li @mouseenter="submenuIsOpenTeam1 = true" @mouseleave="submenuIsOpenTeam1 = false">
-                    <RouterLink to="/erste-mannschaft" class="router-link" :class="{ 'active': activeNavItem === 'erste-mannschaft' }" v-on:click="toggleMenu()">1. Mannschaft</RouterLink>
-                </li>
-                <li @mouseenter="submenuIsOpenTeam2 = true" @mouseleave="submenuIsOpenTeam2 = false">
-                    <RouterLink to="/zweite-mannschaft" class="router-link" :class="{ 'active': activeNavItem === 'zweite-mannschaft' }" v-on:click="toggleMenu()">2. Mannschaft</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/futsal" class="router-link" :class="{ 'active': activeNavItem === 'futsal' }" v-on:click="toggleMenu()">Futsal</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/vorstandschaft" class="router-link" :class="{ 'active': activeNavItem === 'board' }" v-on:click="toggleMenu()">Vorstandschaft</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/sponsoren" class="router-link" :class="{ 'active': activeNavItem === 'sponsors' }" v-on:click="toggleMenu()">Sponsoren</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/geschichte" class="router-link" :class="{ 'active': activeNavItem === 'history' }" v-on:click="toggleMenu()">Geschichte</RouterLink>
-                </li>
-                <li class="pb-8 lg:pb-0">
-                    <RouterLink to="/mitglied-werden" class="router-link" :class="{ 'active': activeNavItem === 'mitglied-werden' }" v-on:click="toggleMenu()">Mitglied werden</RouterLink>
-                </li>
+                <RouterLink
+                    to="/"
+                    class="router-link pt-8"
+                    :class="{ 'active': activeNavItem === 'home', 'block': isMobileView, 'hidden': !isMobileView }"
+                    v-on:click="toggleMenu()">Home
+                </RouterLink>
+                <RouterLink
+                    to="/erste-mannschaft"
+                    class="router-link p-4"
+                    :class="{ 'active': activeNavItem === 'erste-mannschaft','block': isMobileView }"
+                    v-on:click="toggleMenu()"
+                    @mouseenter="submenuIsOpenTeam1 = true"
+                    @mouseleave="submenuIsOpenTeam1 = false">1. Mannschaft
+                </RouterLink>
+                <RouterLink
+                    to="/zweite-mannschaft"
+                    class="router-link p-4"
+                    :class="{ 'active': activeNavItem === 'zweite-mannschaft','block': isMobileView }"
+                    v-on:click="toggleMenu()"
+                    @mouseenter="submenuIsOpenTeam2 = true"
+                    @mouseleave="submenuIsOpenTeam2 = false">2. Mannschaft
+                </RouterLink>
+                <RouterLink 
+                    to="/futsal" 
+                    class="router-link p-4"
+                    :class="{ 'active': activeNavItem === 'futsal','block': isMobileView }" 
+                    v-on:click="toggleMenu()">Futsal
+                </RouterLink>
+                <RouterLink 
+                    to="/vorstandschaft" 
+                    class="router-link p-4" 
+                    :class="{ 'active': activeNavItem === 'board','block': isMobileView }" 
+                    v-on:click="toggleMenu()">Vorstandschaft
+                </RouterLink>
+                <RouterLink 
+                    to="/sponsoren" 
+                    class="router-link p-4" 
+                    :class="{ 'active': activeNavItem === 'sponsors','block': isMobileView }" 
+                    v-on:click="toggleMenu()">Sponsoren
+                </RouterLink>
+                <RouterLink 
+                    to="/geschichte" 
+                    class="router-link p-4" 
+                    :class="{ 'active': activeNavItem === 'history','block': isMobileView }" 
+                    v-on:click="toggleMenu()">Geschichte
+                </RouterLink>
+                <RouterLink 
+                    to="/mitglied-werden" 
+                    class="router-link p-4" 
+                    :class="{ 'active': activeNavItem === 'mitglied-werden','block': isMobileView }" 
+                    v-on:click="toggleMenu()">Mitglied werden
+                </RouterLink>
             </ul>
             <div v-if="!isMobileView" class="relative">
                 <Submenu v-if="activeNavItem === 'erste-mannschaft'" :isOpen="submenuIsOpenTeam1">
-                    <li><a href="#league-1">Liga & Tabelle</a></li>
-                    <li><a href="#team-1">Kader</a></li>
-                    <li><a href="#training-1">Trainingszeiten</a></li>
+                    <a class="p-4" href="#league-1">Liga & Tabelle</a>
+                    <a class="p-4" href="#team-1">Kader</a>
+                    <a class="p-4" href="#training-1">Trainingszeiten</a>
                 </Submenu>
                 <Submenu v-if="activeNavItem === 'zweite-mannschaft'" :isOpen="submenuIsOpenTeam2">
-                    <li><a href="#league-2">Liga & Tabelle</a></li>
-                    <li><a href="#team-2">Kader</a></li>
-                    <li><a href="#training-2">Trainingszeiten</a></li>
+                    <a class="p-4" href="#league-2">Liga & Tabelle</a>
+                    <a class="p-4" href="#team-2">Kader</a>
+                    <a class="p-4" href="#training-2">Trainingszeiten</a>
                 </Submenu>
             </div>  
         </div>
@@ -159,15 +188,12 @@ export default {
 h1{
     font-family: 'Anton', sans-serif;
 }
-
-li {
+li{
     padding: 1rem;
-
+    
 }
-
-.zoomable > li:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+a:hover{
+    transform: scale(1.2)
 }
 
 .router-link{
