@@ -93,12 +93,18 @@ import Submenu from './Submenu.vue';
                 </RouterLink>
             </ul>
             <div v-if="!isMobileView" class="relative">
-                <Submenu v-if="activeNavItem === 'erste-mannschaft'" :isOpen="submenuIsOpenTeam1">
+                <Submenu v-if="activeNavItem === 'erste-mannschaft'"
+                :isOpen="submenuIsOpenTeam1"
+                @close-submenu="closeSubmenu"
+                @open-submenu="openSubmenu">
                     <a class="p-4" href="#league-1">Liga & Tabelle</a>
                     <a class="p-4" href="#team-1">Kader</a>
                     <a class="p-4" href="#training-1">Trainingszeiten</a>
                 </Submenu>
-                <Submenu v-if="activeNavItem === 'zweite-mannschaft'" :isOpen="submenuIsOpenTeam2">
+                <Submenu v-if="activeNavItem === 'zweite-mannschaft'" 
+                :isOpen="submenuIsOpenTeam2"
+                @close-submenu="closeSubmenu"
+                @open-submenu="openSubmenu">
                     <a class="p-4" href="#league-2">Liga & Tabelle</a>
                     <a class="p-4" href="#team-2">Kader</a>
                     <a class="p-4" href="#training-2">Trainingszeiten</a>
@@ -151,6 +157,7 @@ export default {
 
         toggleMenu() {
             console.log("toggleMenu() loaded")
+            console.log("submenuIsOpenTeam1: "+this.submenuIsOpenTeam1)
             if(this.isMobileView){
                 this.isActive = !this.isActive;
                 this.showX();
@@ -165,6 +172,25 @@ export default {
                 span.classList.toggle('open');
             }
         },
+
+        openSubmenu(){
+            const path = this.$route.path;
+            if(path == '/erste-mannschaft'){
+                this.submenuIsOpenTeam1 = true; // Update the isOpen state
+            } else{
+                this.submenuIsOpenTeam2 = true; // Update the isOpen state
+            }
+        },
+
+        closeSubmenu() {
+            const path = this.$route.path;
+            if(path == '/erste-mannschaft'){
+                this.submenuIsOpenTeam1 = false; // Update the isOpen state
+            } else{
+                this.submenuIsOpenTeam2 = false; // Update the isOpen state
+            }   
+        }
+     
     },
     computed: {
         isClickable(){
