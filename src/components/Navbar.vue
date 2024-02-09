@@ -49,17 +49,13 @@ import Submenu from './Submenu.vue';
                     to="/erste-mannschaft"
                     class="router-link p-4"
                     :class="{ 'active': activeNavItem === 'erste-mannschaft','block': isMobileView }"
-                    v-on:click="toggleMenu()"
-                    @mouseenter="submenuIsOpenTeam1 = true"
-                    @mouseleave="submenuIsOpenTeam1 = false">1. Mannschaft
+                    v-on:click="toggleMenu()">1. Mannschaft
                 </RouterLink>
                 <RouterLink
                     to="/zweite-mannschaft"
                     class="router-link p-4"
                     :class="{ 'active': activeNavItem === 'zweite-mannschaft','block': isMobileView }"
-                    v-on:click="toggleMenu()"
-                    @mouseenter="submenuIsOpenTeam2 = true"
-                    @mouseleave="submenuIsOpenTeam2 = false">2. Mannschaft
+                    v-on:click="toggleMenu()">2. Mannschaft
                 </RouterLink>
                 <RouterLink 
                     to="/futsal" 
@@ -186,7 +182,7 @@ export default {
 
         closeSubmenu() {
             const path = this.$route.path;
-            if(path == '/erste-mannschaft'){
+            if(path === '/erste-mannschaft'){
                 this.submenuIsOpenTeam1 = false; // Update the isOpen state
             } else{
                 this.submenuIsOpenTeam2 = false; // Update the isOpen state
