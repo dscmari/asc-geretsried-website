@@ -97,17 +97,24 @@ import Submenu from './Submenu.vue';
                 :isOpen="submenuIsOpenTeam1"
                 @close-submenu="closeSubmenu"
                 @open-submenu="openSubmenu">
-                    <a class="p-4" href="#league-1">Liga & Tabelle</a>
+                    <!-- <a class="p-4" href="#league-1">Liga & Tabelle</a>
                     <a class="p-4" href="#team-1">Kader</a>
-                    <a class="p-4" href="#training-1">Trainingszeiten</a>
+                    <a class="p-4" href="#training-1">Trainingszeiten</a> -->
+                    <p>test</p>
+                    <p>test</p>
+                    <p>test</p>
+                    
                 </Submenu>
                 <Submenu v-if="activeNavItem === 'zweite-mannschaft'" 
                 :isOpen="submenuIsOpenTeam2"
                 @close-submenu="closeSubmenu"
                 @open-submenu="openSubmenu">
-                    <a class="p-4" href="#league-2">Liga & Tabelle</a>
+                    <!-- <a class="p-4" href="#league-2">Liga & Tabelle</a>
                     <a class="p-4" href="#team-2">Kader</a>
-                    <a class="p-4" href="#training-2">Trainingszeiten</a>
+                    <a class="p-4" href="#training-2">Trainingszeiten</a> -->
+                    <p>test2</p>    
+                    <p>test2</p>    
+                    <p>test2</p>    
                 </Submenu>
             </div>  
         </div>
