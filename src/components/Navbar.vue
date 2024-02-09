@@ -177,7 +177,7 @@ export default {
 
         openSubmenu(){
             const path = this.$route.path;
-            if(path == '/erste-mannschaft'){
+            if(path === '/erste-mannschaft'){
                 this.submenuIsOpenTeam1 = true; // Update the isOpen state
             } else{
                 this.submenuIsOpenTeam2 = true; // Update the isOpen state
