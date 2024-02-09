@@ -125,7 +125,7 @@ export default {
             isMobileView: false,
             submenuIsOpenTeam1: false,
             submenuIsOpenTeam2: false,
-            activeNavItem: null
+            activeNavItem: "none"
         };
     },
     watch: {
