@@ -100,10 +100,9 @@ import Submenu from './Submenu.vue';
                     <!-- <a class="p-4" href="#league-1">Liga & Tabelle</a>
                     <a class="p-4" href="#team-1">Kader</a>
                     <a class="p-4" href="#training-1">Trainingszeiten</a> -->
-                    <p>test</p>
-                    <p>test</p>
-                    <p>test</p>
-                    
+                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#league-1' }" class="p-4">Liga & Tabelle</RouterLink>
+                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#team-1' }" class="p-4">Kader</RouterLink>
+                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#training-1' }" class="p-4">Trainingszeiten</RouterLink>
                 </Submenu>
                 <Submenu v-if="activeNavItem === 'zweite-mannschaft'" 
                 :isOpen="submenuIsOpenTeam2"
@@ -112,9 +111,9 @@ import Submenu from './Submenu.vue';
                     <!-- <a class="p-4" href="#league-2">Liga & Tabelle</a>
                     <a class="p-4" href="#team-2">Kader</a>
                     <a class="p-4" href="#training-2">Trainingszeiten</a> -->
-                    <p>test2</p>    
-                    <p>test2</p>    
-                    <p>test2</p>    
+                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#league-2' }" class="p-4">Liga & Tabelle</RouterLink>
+                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#team-2' }" class="p-4">Kader</RouterLink>
+                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#training-2' }" class="p-4">Trainingszeiten</RouterLink>   
                 </Submenu>
             </div>  
         </div>

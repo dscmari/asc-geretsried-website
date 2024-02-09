@@ -10,8 +10,15 @@ import NewMemberView from '../views/NewMemberView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  scrollBehavior() {
+  scrollBehavior(to,from) {
     // Always scroll to the top of the page
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 200,
+        behavior: 'smooth',
+      }
+    }
     return { top: 0 };
   },
   routes: [
