@@ -39,7 +39,7 @@
          lg:static lg:w-full lg:overflow-visible lg:opacity-100 z-40">
             <ul class="text-xl lg:text-lg xl:text-xl w-full lg:flex lg:justify-evenly text-white bg-ascBlue text-center zoomable ">
                 <li 
-                :class="{ 'active': activeNavItem === 'home', 'block': isMobileView, 'hidden': !isMobileView }">
+                :class="{ 'block': isMobileView, 'hidden': !isMobileView }">
                     <RouterLink
                     to="/"
                     class="router-link pt-8"

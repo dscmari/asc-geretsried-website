@@ -89,7 +89,6 @@
             </div>
         </div>
     </div>
-
     <div>
         <h1 id="training-1" class="p-4 pb-0 lg:pt-8 lg:pl-0 text-lg font-semibold text-ascBlue">Trainingszeiten</h1>
         <div class="p-4">
@@ -109,11 +108,8 @@
                     <li class="p-1">Do 20.30 – 22.00 Uhr</li>
                 </ul>
             </div>
-            
         </div>
     </div>
-
-
 </template>
 
 <style>
