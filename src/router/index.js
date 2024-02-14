@@ -43,8 +43,8 @@ const router = createRouter({
       component: FutsalView
     },
     {
-      path: '/vorstandschaft',
-      name: 'vorstandschaft',
+      path: '/vorstand',
+      name: 'vorstand',
       component: BoardView
     },
     {

@@ -4,7 +4,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <div class="mt-8">
-    <img class="object-cover" src="/images/aufstieg_2023_optimiert.jpg" alt="">
+    <img src="/images/aufstieg_2023_optimiert.jpg" alt="">
   </div>
 
   <div class="p-4">

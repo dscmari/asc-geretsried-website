@@ -38,7 +38,7 @@ export default {
     },
     data() {
         return {
-            pdfUrl: '/aufnahmeantragASC.pdf',
+            pdfUrl: '/asc-geretsried-website/aufnahmeantragASC.pdf',
             pdfFileName: 'aufnahmeantragASC.pdf'
         };
     }

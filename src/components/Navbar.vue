@@ -1,18 +1,16 @@
 <script setup>
     import { RouterLink } from 'vue-router';
-import Submenu from './Submenu.vue';
 </script>
 
 <template>
     <div class="w-full pt-4 sticky top-0 bg-white z-10">
         <div class="flex items-center justify-between">
             <div class="flex items-center p-2">
-                <RouterLink to="/">
+                <router-link to="/">
                     <img src="/images/logo.webp" alt="ASC Geretsried Logo Adler" class="m-2" :style="{ width: isMobileView ? '35px' : '50px'}">
-                </RouterLink>
-                <!-- TODO: adapt h1 color, seems to be to dark -->
+                </router-link>
                 <h1 class="text-ascBlue text-lg lg:text-2xl lg:ml-4 ">
-                    <RouterLink class="font-semibold" to="/">ASC Geretsried</RouterLink>
+                    <router-link class="font-semibold" to="/">ASC Geretsried</router-link>
                 </h1>
             </div>
             <div class="hidden lg:flex">
@@ -36,126 +34,99 @@ import Submenu from './Submenu.vue';
             </div>   
         </div>
         <div :style="{ width: isActive ? '75%' : '' }"
+        id="nav"
         class="fixed top-0 left-0 w-0 opacity-90 whitespace-nowrap transform overflow-x-hidden -translate-x-0 ease-in-out transition-all duration-300 
          lg:static lg:w-full lg:overflow-visible lg:opacity-100 z-40">
             <ul class="text-xl lg:text-lg xl:text-xl w-full lg:flex lg:justify-evenly text-white bg-ascBlue text-center zoomable ">
-                <RouterLink
+                <li 
+                :class="{ 'active': activeNavItem === 'home', 'block': isMobileView, 'hidden': !isMobileView }">
+                    <RouterLink
                     to="/"
                     class="router-link pt-8"
-                    :class="{ 'active': activeNavItem === 'home', 'block': isMobileView, 'hidden': !isMobileView }"
                     v-on:click="toggleMenu()">Home
-                </RouterLink>
-                <RouterLink
+                    </RouterLink>
+                </li>
+                <li>
+                    <router-link
                     to="/erste-mannschaft"
-                    class="router-link p-4"
-                    :class="{ 'active': activeNavItem === 'erste-mannschaft','block': isMobileView }"
+                    class="router-link relative"
+                    :class="{ 'block': isMobileView }"
                     v-on:click="toggleMenu()">1. Mannschaft
-                </RouterLink>
-                <RouterLink
+                    </router-link>
+                </li>
+                <li>
+                    <router-link
                     to="/zweite-mannschaft"
-                    class="router-link p-4"
-                    :class="{ 'active': activeNavItem === 'zweite-mannschaft','block': isMobileView }"
+                    class="router-link relative"
+                    :class="{ 'block': isMobileView }"
                     v-on:click="toggleMenu()">2. Mannschaft
-                </RouterLink>
-                <RouterLink 
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
                     to="/futsal" 
-                    class="router-link p-4"
-                    :class="{ 'active': activeNavItem === 'futsal','block': isMobileView }" 
+                    class="router-link"
+                    :class="{ 'block': isMobileView }" 
                     v-on:click="toggleMenu()">Futsal
-                </RouterLink>
-                <RouterLink 
-                    to="/vorstandschaft" 
-                    class="router-link p-4" 
-                    :class="{ 'active': activeNavItem === 'board','block': isMobileView }" 
-                    v-on:click="toggleMenu()">Vorstandschaft
-                </RouterLink>
-                <RouterLink 
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
+                    to="/vorstand" 
+                    class="router-link" 
+                    :class="{ 'block': isMobileView }" 
+                    v-on:click="toggleMenu()">Vorstand
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
                     to="/sponsoren" 
-                    class="router-link p-4" 
-                    :class="{ 'active': activeNavItem === 'sponsors','block': isMobileView }" 
+                    class="router-link" 
+                    :class="{ 'block': isMobileView }" 
                     v-on:click="toggleMenu()">Sponsoren
-                </RouterLink>
-                <RouterLink 
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
                     to="/geschichte" 
-                    class="router-link p-4" 
-                    :class="{ 'active': activeNavItem === 'history','block': isMobileView }" 
+                    class="router-link" 
+                    :class="{ 'block': isMobileView }" 
                     v-on:click="toggleMenu()">Geschichte
-                </RouterLink>
-                <RouterLink 
+                    </router-link>
+                </li>
+                <li>              
+                    <router-link 
                     to="/mitglied-werden" 
-                    class="router-link p-4" 
-                    :class="{ 'active': activeNavItem === 'mitglied-werden','block': isMobileView }" 
+                    class="router-link" 
+                    :class="{ 'block': isMobileView }" 
                     v-on:click="toggleMenu()">Mitglied werden
-                </RouterLink>
+                    </router-link>
+                </li>
             </ul>
-            <div v-if="!isMobileView" class="relative">
-                <Submenu v-if="activeNavItem === 'erste-mannschaft'"
-                :isOpen="submenuIsOpenTeam1"
-                @close-submenu="closeSubmenu"
-                @open-submenu="openSubmenu">
-                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#league-1' }" class="p-4">Liga & Tabelle</RouterLink>
-                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#team-1' }" class="p-4">Kader</RouterLink>
-                    <RouterLink :to="{ name: 'erste-mannschaft', hash: '#training-1' }" class="p-4">Trainingszeiten</RouterLink>
-                </Submenu>
-                <Submenu v-if="activeNavItem === 'zweite-mannschaft'" 
-                :isOpen="submenuIsOpenTeam2"
-                @close-submenu="closeSubmenu"
-                @open-submenu="openSubmenu">
-                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#league-2' }" class="p-4">Liga & Tabelle</RouterLink>
-                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#team-2' }" class="p-4">Kader</RouterLink>
-                    <RouterLink :to="{ name: 'zweite-mannschaft', hash: '#training-2' }" class="p-4">Trainingszeiten</RouterLink>   
-                </Submenu>
-            </div>  
         </div>
+        <!-- <div class="flex gap-4">
+            <router-link :to="{ name: 'erste-mannschaft', hash: '#league-1' }">Liga1</router-link>
+            <router-link :to="{ name: 'erste-mannschaft', hash: '#team-1' }">Kader1</router-link>
+            <router-link :to="{ name: 'erste-mannschaft', hash: '#training-1' }">Trainingszeiten1</router-link>
+        </div>
+        <div class="flex gap-4">
+            <router-link :to="{ name: 'zweite-mannschaft', hash: '#league-2' }">Liga2</router-link>
+            <router-link :to="{ name: 'zweite-mannschaft', hash: '#team-2' }">Kader2</router-link>
+            <router-link :to="{ name: 'zweite-mannschaft', hash: '#training-2' }">Trainingszeiten2</router-link>
+        </div> -->
     </div>
 </template>
 
 <script>
 export default {
-    components:{
-        Submenu
-    },
     data() {
         return {
             isActive: false,
             isMobileView: false,
-            submenuIsOpenTeam1: false,
-            submenuIsOpenTeam2: false,
-            activeNavItem: "none"
         };
     },
-    watch: {
-    $route() {
-      this.updateActiveNavItem();
-    }
-  },
     methods: {
-        updateActiveNavItem() {
-            const path = this.$route.path;
-            if (path === '/') {
-                this.activeNavItem = 'home';
-            } else if (path === '/erste-mannschaft') {
-                this.activeNavItem = 'erste-mannschaft';
-            } else if (path === '/zweite-mannschaft') {
-                this.activeNavItem = 'zweite-mannschaft';
-            } else if (path === '/futsal') {
-                this.activeNavItem = 'futsal';
-            } else if (path === '/vorstandschaft') {
-                this.activeNavItem = 'board';
-            } else if (path === '/sponsoren') {
-                this.activeNavItem = 'sponsors';
-            } else if (path === '/geschichte') {
-                this.activeNavItem = 'history';
-            } else if(path === '/mitglied-werden'){
-                this.activeNavItem = 'mitglied-werden'
-            }
-
-            console.log(this.activeNavItem)
-        },
-
         toggleMenu() {
-            console.log("toggleMenu() loaded")
-            console.log("submenuIsOpenTeam1: "+this.submenuIsOpenTeam1)
             if(this.isMobileView){
                 this.isActive = !this.isActive;
                 this.showX();
@@ -170,25 +141,6 @@ export default {
                 span.classList.toggle('open');
             }
         },
-
-        openSubmenu(){
-            const path = this.$route.path;
-            if(path === '/erste-mannschaft'){
-                this.submenuIsOpenTeam1 = true; // Update the isOpen state
-            } else{
-                this.submenuIsOpenTeam2 = true; // Update the isOpen state
-            }
-        },
-
-        closeSubmenu() {
-            const path = this.$route.path;
-            if(path === '/erste-mannschaft'){
-                this.submenuIsOpenTeam1 = false; // Update the isOpen state
-            } else{
-                this.submenuIsOpenTeam2 = false; // Update the isOpen state
-            }   
-        }
-     
     },
     computed: {
         isClickable(){
@@ -212,20 +164,31 @@ export default {
 h1{
     font-family: 'Anton', sans-serif;
 }
+
 li{
     padding: 1rem;
-    
-}
-a:hover{
-    transform: scale(1.2)
 }
 
 .router-link{
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    position: relative;
+    display: inline-block;
+}
+.router-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
-.active{
-    text-decoration: underline;
+.router-link:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .upper.open {

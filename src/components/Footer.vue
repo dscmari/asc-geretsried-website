@@ -7,6 +7,6 @@
             <a href="https://web.facebook.com/GeretsriederAdler"><img class="h-8 m-4" src="/images/fb-icon.png"
                     alt="Facebook Icon"></a>
         </div>
-        <p>@2023</p>
+        <p>@2024</p>
     </div>
 </template>

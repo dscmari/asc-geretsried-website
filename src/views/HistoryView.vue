@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h2 class="text-2xl font-semibold px-4 lg:mt-12">Meilensteine</h2>
+        <div class="flex items-center mt-4">
+            <div class="w-10 h-1 bg-ascBlue"></div>
+            <h1 class="p-4 text-2xl font-semibold text-ascBlue">Meilensteine</h1>
+        </div>
         <div class="p-4 timeline-container">
             <div class="my-3 text-container">
                 <h3>Offizielle Gründung </h3>
