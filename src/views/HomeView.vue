@@ -1,6 +1,3 @@
-<!-- <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script> -->
 
 <template>
   <div class="mt-8">
@@ -8,7 +5,7 @@ import TheWelcome from '../components/TheWelcome.vue'
   </div>
 
   <div class="p-4">
-            <h2 class="text-lg font-semibold my-6">
+            <h2 class="text-lg font-semibold my-6 text-ascBlue">
               Ihr fragt euch, wie unser Verein entstanden ist und für was wir stehen? Dann seid ihr hier genau richtig!
             </h2>
             <p class="text-md">
