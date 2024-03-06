@@ -69,8 +69,8 @@
             </div>
         </div>
         <div>
-            <div class="py-2">
-                <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Pressesprecher Panagiotis Zormpas">
+            <div class="py-2 h-80 w-60 bg-[#B9D9EB]">
+                <!-- <img class="h-80 w-60" src="/images/platzhalter.jpg" alt="Pressesprecher Panagiotis Zormpas"> -->
             </div>
             <div>
                 <p>Pressesprecher</p>
