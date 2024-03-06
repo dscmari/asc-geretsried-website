@@ -6,7 +6,7 @@ import CompressionPlugin from 'vite-plugin-compression';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/asc-geretsried-website/',
+  base: '/',
   plugins: [
     vue(),
     CompressionPlugin()

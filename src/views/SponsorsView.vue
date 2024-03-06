@@ -29,9 +29,6 @@
             <img src="/images/sponsors/bibisee.jpg" alt="Restaurant Bibisee">
         </div>
         <div class="img-container">
-            <img src="/images/sponsors/dermifant.jpg" alt="Dermifant">
-        </div>
-        <div class="img-container">
             <img src="/images/sponsors/waschstrasse.jpg" alt="Waschstrasse Wolfratshausen">
         </div>
         <div class="img-container">
