@@ -7,7 +7,7 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center p-2">
                 <router-link to="/">
-                    <img src="/images/logo.webp" alt="ASC Geretsried Logo Adler" class="m-2" :style="{ width: isMobileView ? '35px' : '50px'}">
+                    <img src="/images/logo_noBackground.webp" alt="ASC Geretsried Logo Adler" class="m-2" :style="{ width: isMobileView ? '35px' : '50px'}">
                 </router-link>
                 <h1 class="text-ascBlue text-lg lg:text-2xl lg:ml-4">
                     <router-link class="font-semibold" to="/">ASC Geretsried</router-link>
