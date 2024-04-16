@@ -7,6 +7,9 @@ import BoardView from '../views/BoardView.vue'
 import SponsorsView from '../views/SponsorsView.vue'
 import HistoryView from '../views/HistoryView.vue'
 import NewMemberView from '../views/NewMemberView.vue'
+import LivetickerView from '../views/LivetickerView.vue'
+import ImpressumView from '../views/ImpressumView.vue'
+import DatenschutzerklaerungView from '../views/DatenschutzerklaerungView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,6 +64,21 @@ const router = createRouter({
       path: '/mitglied-werden',
       name: 'mitglied-werden',
       component: NewMemberView
+    },
+    {
+      path: '/liveticker',
+      name: 'liveticker',
+      component: LivetickerView
+    },
+    {
+      path: '/impressum',
+      name: 'impressum',
+      component: ImpressumView
+    },
+    {
+      path: '/datenschutzerklaerung',
+      name: 'datenschutzerklaerung',
+      component: DatenschutzerklaerungView
     }
   ]
 })

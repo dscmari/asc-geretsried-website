@@ -1,8 +1,14 @@
 @import './base.css';
 
+
 #app {
-  width: 90vw;
-  max-width: 1800px;
-  margin: 0 auto;
   font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  #app {
+    width: 90vw;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 }

@@ -41,6 +41,9 @@
             <img src="/images/sponsors/sparkasse.jpg" alt="Sparkasse Bad-Toelz-Wolfratshausen">
         </div>
         <div class="img-container">
+            <img src="/images/sponsors/herzstueck.png" alt="Herzstück - Cafè">
+        </div>
+        <div class="img-container">
             <img src="/images/sponsors/allergika.jpg" alt="Allergika - ihr Allergiespezialist">
         </div>
     </div>

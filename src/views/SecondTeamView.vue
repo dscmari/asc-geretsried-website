@@ -1,3 +1,8 @@
+<script setup>
+import UpcomingGames from '../components/UpcomingGames.vue'
+import LeagueTable_2 from '../components/LeagueTable_2.vue'
+</script>
+
 <template>
     <div class="flex items-center mt-4">
         <div class="w-10 h-1 bg-ascBlue"></div>
@@ -9,11 +14,14 @@
 
     <!-- TODO: durch iframe ersetzen -->
     <div>
-        <h1 id="league-2" class="p-4 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
-        <ul class="p-4 pt-0 text-lg">
-            <li class="p-1 underline"><a href="https://www.bfv.de/mannschaften/asc-geretsried-ii/02IDHF83IG000000VS5489B2VU2I8R4H" target="_blank">Kommende Spiele</a></li>
-            <li class="p-1 underline"><a href="https://www.bfv.de/wettbewerbe/meisterschaften/c-klasse-gruppe-7/02LRRN8PP400001AVS5489B4VUAB0UC4-G#tabelle" target="_blank">Tabelle</a></li>
-        </ul>  
+        <h1 id="league-1" class="p-4 pb-0 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
+        <h2 class="p-4 mb-4 text-lg font-semibold text-ascBlue underline">Liga</h2>
+        <UpcomingGames />
+        <h2 class="p-4 my-4 text-lg font-semibold text-ascBlue underline">Tabelle</h2>
+        <LeagueTable_2 />
+        <p class="p-4 lg:mt-4">
+            Mehr Informationen zum ASC findet ihr <a class="underline text-ascBlue font-semibold" href="https://www.bfv.de/vereine/asc-geretsried/01S7PPNEG8000000VS548984VTJ68QLL" target="_blank">hier</a>.
+        </p>
     </div>
 
     <div>

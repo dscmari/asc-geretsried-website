@@ -72,6 +72,14 @@
                 </li>
                 <li>
                     <router-link 
+                    to="/liveticker" 
+                    class="router-link"
+                    :class="{ 'block': isMobileView }" 
+                    v-on:click="toggleMenu()">Liveticker
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
                     to="/vorstand" 
                     class="router-link" 
                     :class="{ 'block': isMobileView }" 
