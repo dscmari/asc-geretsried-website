@@ -1,14 +1,14 @@
 <template>
     <div class="h-screen">
         <div class="h-full flex items-center flex-col border border-grey-500" id="bfv1713090614892">
-            <p class="mt-12 p-4">Um den Liveticker anzuzeigen, ist es notwendig Cookies von einem Drittanbieter (Baytischer Fussball-Verband) einzubinden.</p>
+            <p class="mt-12 p-4">Um den Liveticker anzuzeigen, ist es notwendig Cookies von einem Drittanbieter (Bayrischer Fussball-Verband) einzubinden.</p>
             <button class="p-4 underline text-lg" v-on:click="scrollToBottom()">Gehe zu Datenschutzeinstellungen</button>
         </div>
     </div>
 </template>
 
 <script>
-import { ScrollToBottomMixin } from '../mixins/ScrollToBottomMixin';
+import { ScrollToBottomMixin } from '../../mixins/ScrollToBottomMixin';
 
 export default{
     mixins: [ScrollToBottomMixin],

@@ -1,8 +1,3 @@
-<script setup>
-import UpcomingGames from '../components/UpcomingGames.vue'
-import LeagueTable_2 from '../components/LeagueTable_2.vue'
-</script>
-
 <template>
     <div class="flex items-center mt-4">
         <div class="w-10 h-1 bg-ascBlue"></div>
@@ -12,13 +7,12 @@ import LeagueTable_2 from '../components/LeagueTable_2.vue'
         <img src="/images/zweite-mannschaft.jpg" alt="erste mannschaft">
     </div>
 
-    <!-- TODO: durch iframe ersetzen -->
     <div>
         <h1 id="league-1" class="p-4 pb-0 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
         <h2 class="p-4 mb-4 text-lg font-semibold text-ascBlue underline">Liga</h2>
-        <UpcomingGames />
+        <UpcomingGames :widgetGamesConfig="widgetGamesConfig" />
         <h2 class="p-4 my-4 text-lg font-semibold text-ascBlue underline">Tabelle</h2>
-        <LeagueTable_2 />
+        <LeagueTable :widgetTableConfig="widgetTableConfig" />
         <p class="p-4 lg:mt-4">
             Mehr Informationen zum ASC findet ihr <a class="underline text-ascBlue font-semibold" href="https://www.bfv.de/vereine/asc-geretsried/01S7PPNEG8000000VS548984VTJ68QLL" target="_blank">hier</a>.
         </p>
@@ -121,3 +115,29 @@ import LeagueTable_2 from '../components/LeagueTable_2.vue'
         </div>
     </div>
 </template>
+<script setup>
+import UpcomingGames from '../components/widgets/UpcomingGames.vue'
+import LeagueTable from '../components/widgets/LeagueTable.vue'
+
+const widgetGamesConfig = {
+    teamId: "02IDHF83IG000000VS5489B2VU2I8R4H",
+    widgetId: "bfv1713365491165",
+    options: {
+        height: "100%",
+        width: "100%",
+        selectedTab: BFVWidget.HTML5.mannschaftTabs.spiele,
+        colorResults: "undefined",
+        colorNav: "undefined",
+        colorClubName: "#002166",
+        backgroundNav: "undefined"
+    }
+};
+
+const widgetTableConfig = {
+    tableId: "02NO6NQIQG000006VS5489B4VSMU21R6-G",
+    widgetId: "bfv1713089993516",
+    teamPermanentId: "02IDHF83IG000000VS5489B2VU2I8R4H"
+}
+
+
+</script>

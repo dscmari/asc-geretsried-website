@@ -1,28 +1,27 @@
 <template>
-     <div class="flex items-center mt-4">
+    <div class="flex items-center mt-4">
         <div class="w-10 h-1 bg-ascBlue"></div>
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Futsal</h1>
     </div>
     <h2 class="pl-4 lg:pl-0 text-lg font-semibold text-ascBlue">Was ist Futsal?</h2>
-    <p class="p-4">
+    <p class="px-4">
         Damit unseren Adlern in der Winterpause nicht langweilig wird, haben wir 2021 eine Futsal-Mannschaft gegründet.
         Beim Futsal wird 5 gegen 5 in der Halle gespielt. Im Vergleich zum klassischen Hallenfußball gibt es einen
         speziellen Ball, kleinere Tore und Seitenaus. Unsere Mannschaft, bei der auch zahlreiche Gastspieler aus
         Nachbarvereinen vertreten sind, spielt aktuell in der Bayernliga, der dritthöchsten Liga bundesweit.
     </p>
-    <p class="px-4">
-        Nicht nur Spieler vom ASC, sondern auch Jungs von Nachbarvereinen wie TuS, Eurasburg und FC kicken zusammen für die
-        Adler in der Halle 💪🏽🔥
-    </p>
     <div class="mt-8">
         <img class="mx-auto" src="/images/futsal-team.jpg" alt="erste mannschaft">
     </div>
     <div>
-        <h1 id="" class="p-4 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
-        <ul class="p-4 pt-0 text-lg">
-            <li class="p-1 underline"><a href="https://www.bfv.de/vereine/asc-geretsried/01S7PPNEG8000000VS548984VTJ68QLL" target="_blank">Kommende Spiele</a></li>
-            <li class="p-1 underline"><a href="https://www.bfv.de/wettbewerbe/meisterschaften/kreisklasse-gruppe-4/02LRRLDGIC00004PVS5489B4VUAB0UC4-G#tabelle" target="_blank">Tabelle</a></li>
-        </ul>  
+        <h1 id="league-1" class="p-4 pb-0 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
+        <h2 class="p-4 mb-4 text-lg font-semibold text-ascBlue underline">Liga</h2>
+        <UpcomingGames :widgetGamesConfig="widgetGamesConfig" />
+        <h2 class="p-4 my-4 text-lg font-semibold text-ascBlue underline">Tabelle</h2>
+        <LeagueTable_Futsal />
+        <p class="p-4 lg:mt-4">
+            Mehr Informationen zum ASC findet ihr <a class="underline text-ascBlue font-semibold" href="https://www.bfv.de/vereine/asc-geretsried/01S7PPNEG8000000VS548984VTJ68QLL" target="_blank">hier</a>.
+        </p>
     </div>
     <div>
         <h2 class="p-4 lg:pt-8 lg:pl-0 text-lg font-semibold text-ascBlue">Trainingszeiten</h2>
@@ -39,3 +38,23 @@
         <p class="pl-4">Tasso Lasidis</p>
     </div>
 </template>
+
+<script setup>
+import UpcomingGames from '../components/widgets/UpcomingGames.vue'
+import LeagueTable_Futsal from '../components/widgets/LeagueTable_Futsal.vue'
+
+const widgetGamesConfig = {
+    teamId: "02926EH9DS000000VS5489B1VUH1VNE0",
+    widgetId: "bfv1713369012656",
+    options: {
+        height: "100%",
+        width: "100%",
+        selectedTab: BFVWidget.HTML5.mannschaftTabs.spiele,
+        colorResults: "undefined",
+        colorNav: "undefined",
+        colorClubName: "#002166",
+        backgroundNav: "undefined"
+    }
+};
+
+</script>

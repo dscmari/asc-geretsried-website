@@ -10,6 +10,8 @@ import NewMemberView from '../views/NewMemberView.vue'
 import LivetickerView from '../views/LivetickerView.vue'
 import ImpressumView from '../views/ImpressumView.vue'
 import DatenschutzerklaerungView from '../views/DatenschutzerklaerungView.vue'
+import SeniorTeamView from '../views/SeniorTeamView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -79,7 +81,16 @@ const router = createRouter({
       path: '/datenschutzerklaerung',
       name: 'datenschutzerklaerung',
       component: DatenschutzerklaerungView
-    }
+    },
+    {
+      path: '/alte-herren',
+      name: 'alte-herren',
+      component: SeniorTeamView
+    },
+    {
+      path: '/:catchAll(.*)', // This catch-all route will match any URL
+      component: NotFoundView,
+    },
   ]
 })
 

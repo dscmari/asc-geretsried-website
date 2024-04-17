@@ -7,9 +7,13 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <Navbar/>
-  <main class="p-4 md:p-0">
-    <RouterView/>
-  </main>
-  <Footer/>
+    <header>
+       <Navbar/>
+    </header>
+    <main class="p-4 md:p-0">
+        <RouterView/>
+    </main>
+    <footer>
+        <Footer/>
+    </footer>
 </template>

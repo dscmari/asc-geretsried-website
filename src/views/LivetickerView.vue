@@ -1,5 +1,5 @@
 <script setup>
-import Liveticker from '../components/Liveticker.vue'
+import Liveticker from '../components/widgets/Liveticker.vue'
 </script>
 
 <template>

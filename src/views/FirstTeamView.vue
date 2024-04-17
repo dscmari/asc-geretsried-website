@@ -1,8 +1,3 @@
-<script setup>
-import LeagueTable_1 from '../components/LeagueTable_1.vue'
-import UpcomingGames from '../components/UpcomingGames.vue'
-</script>
-
 <template>
     <div class="flex items-center mt-4">
         <div class="w-10 h-1 bg-ascBlue"></div>
@@ -12,13 +7,12 @@ import UpcomingGames from '../components/UpcomingGames.vue'
         <img src="/images/erste-mannschaft_optimiert.jpg" alt="erste mannschaft">
     </div>
 
-    <!-- TODO: durch iframe ersetzen -->
     <div>
         <h1 id="league-1" class="p-4 pb-0 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
         <h2 class="p-4 mb-4 text-lg font-semibold text-ascBlue underline">Liga</h2>
-        <UpcomingGames />
+        <UpcomingGames :widgetGamesConfig="widgetGamesConfig"/>
         <h2 class="p-4 my-4 text-lg font-semibold text-ascBlue underline">Tabelle</h2>
-        <LeagueTable_1 />
+        <LeagueTable :widgetTableConfig="widgetTableConfig" />
         <p class="p-4 lg:mt-4">
             Mehr Informationen zum ASC findet ihr <a class="underline text-ascBlue font-semibold" href="https://www.bfv.de/vereine/asc-geretsried/01S7PPNEG8000000VS548984VTJ68QLL" target="_blank">hier</a>.
         </p>
@@ -119,3 +113,31 @@ import UpcomingGames from '../components/UpcomingGames.vue'
         </div>
     </div>
 </template>
+<script setup>
+import LeagueTable from '../components/widgets/LeagueTable.vue'
+import UpcomingGames from '../components/widgets/UpcomingGames.vue'
+
+const widgetGamesConfig = {
+  teamId: "01S9OK0ABK000000VS548984VTL2SVNK",
+  widgetId: "bfv1713367909332",
+  options: {
+    height: "100%",
+    width: "100%",
+    selectedTab: BFVWidget.HTML5.mannschaftTabs.spiele,
+    colorResults: "undefined",
+    colorNav: "undefined",
+    colorClubName: "#002166",
+    backgroundNav: "undefined"
+  }
+};
+
+const widgetTableConfig = {
+    tableId: "02NCFUG1VC000006VS5489B4VSM2QTLD-G",
+    widgetId: "bfv1713087355092",
+    teamPermanentId: "02IDHF83IG000000VS5489B2VU2I8R4H"
+}
+
+</script>
+
+<!-- id="bfv1713367909332" -->
+<!--  BFVWidget.HTML5.zeigeMannschaftKomplett("01S9OK0ABK000000VS548984VTL2SVNK", "bfv1713367909332", { height: "100%", width: "100%", selectedTab:BFVWidget.HTML5.mannschaftTabs.spiele, colorResults: "undefined" , colorNav: "undefined" , colorClubName : "#002166" , backgroundNav: "undefined"}); -->

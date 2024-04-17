@@ -40,11 +40,11 @@
             <ul class="text-xl lg:text-lg xl:text-xl w-full lg:flex lg:justify-evenly text-white bg-ascBlue text-center zoomable ">
                 <li 
                 :class="{ 'block': isMobileView, 'hidden': !isMobileView }">
-                    <RouterLink
+                    <router-link
                     to="/"
                     class="router-link pt-8"
                     v-on:click="toggleMenu()">Home
-                    </RouterLink>
+                    </router-link>
                 </li>
                 <li>
                     <router-link
@@ -60,6 +60,14 @@
                     class="router-link relative"
                     :class="{ 'block': isMobileView }"
                     v-on:click="toggleMenu()">2. Mannschaft
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
+                    to="/alte-herren" 
+                    class="router-link" 
+                    :class="{ 'block': isMobileView }" 
+                    v-on:click="toggleMenu()">Alte Herren
                     </router-link>
                 </li>
                 <li>
@@ -89,39 +97,13 @@
                 <li>
                     <router-link 
                     to="/sponsoren" 
-                    class="router-link" 
+                    class="router-link pb-8 lg:pb-0" 
                     :class="{ 'block': isMobileView }" 
                     v-on:click="toggleMenu()">Sponsoren
                     </router-link>
                 </li>
-                <li>
-                    <router-link 
-                    to="/geschichte" 
-                    class="router-link" 
-                    :class="{ 'block': isMobileView }" 
-                    v-on:click="toggleMenu()">Geschichte
-                    </router-link>
-                </li>
-                <li>              
-                    <router-link 
-                    to="/mitglied-werden" 
-                    class="router-link" 
-                    :class="{ 'block': isMobileView }" 
-                    v-on:click="toggleMenu()">Mitglied werden
-                    </router-link>
-                </li>
             </ul>
         </div>
-        <!-- <div class="flex gap-4">
-            <router-link :to="{ name: 'erste-mannschaft', hash: '#league-1' }">Liga1</router-link>
-            <router-link :to="{ name: 'erste-mannschaft', hash: '#team-1' }">Kader1</router-link>
-            <router-link :to="{ name: 'erste-mannschaft', hash: '#training-1' }">Trainingszeiten1</router-link>
-        </div>
-        <div class="flex gap-4">
-            <router-link :to="{ name: 'zweite-mannschaft', hash: '#league-2' }">Liga2</router-link>
-            <router-link :to="{ name: 'zweite-mannschaft', hash: '#team-2' }">Kader2</router-link>
-            <router-link :to="{ name: 'zweite-mannschaft', hash: '#training-2' }">Trainingszeiten2</router-link>
-        </div> -->
     </div>
 </template>
 
@@ -169,10 +151,6 @@ export default {
 </script>
 
 <style>
-h1{
-    font-family: 'Anton', sans-serif;
-}
-
 li{
     padding: 1rem;
 }
