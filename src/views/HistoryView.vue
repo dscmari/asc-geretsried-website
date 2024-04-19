@@ -50,9 +50,17 @@
                 </p>
             </div>
             <div class="my-3 text-container">
+                <h3>Gründung einer Alte Herren Spielgemeinschaft</h3>
+                <p>
+                   Im Jahr 2023 haben uns gemeinsam mit dem TuS Geretsried dazu entschieden eine AH-Spielgemeinschaft zu gründen.
+                   Das Team nimmt seit 2024 am regulären Spielbetrieb teil. Die ein oder andere regionale Legende sorgt so auch im 
+                   fortgeschritten Fussballeralter noch für Spektakel am Forst.
+                </p>
+            </div>
+            <div class="my-3 text-container">
                 <h3>Ausblick</h3>
                 <p>
-                    Mit über 120 aktiven Mitgliedern, zwei Fußballmannschaften und einer Futsal-Mannschaft blickt die
+                    Mit über 120 aktiven Mitgliedern, drei Fußballmannschaften und einer Futsal-Mannschaft blickt die
                     Vorstandschaft stolz auf die bisherige Entwicklung zurück und möchte diesen erfolgreichen Weg auch in
                     der Zukunft weitergehen.
                     Sportlich möchten wir uns stetig als Mannschaft weiterentwickeln. Unser Hauptaugenmerk liegt aber darin,

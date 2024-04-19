@@ -7,7 +7,8 @@
     <p class="px-4">
         2023 haben wir zusammen mit dem TuS Geretsried eine AH gegründet. Seit 2024 nehmen wir auch am Spielbetrieb teil. 
         Hier steht der Spaß absolut im Vordergrund. Wer Lust hat mit einigen Legenden mitzukicken, kann sich gerne bei uns melden. 
-        Wir freuen uns über Neuzugänge für diese tolle Gemeinschaft!
+        Wir freuen uns über Neuzugänge für diese tolle Gemeinschaft! Vorraussetzung für eine Spielberechtigung ist,
+        dass die Spieler im aktuellen Kalenderjahr mindestens das 32. Lebensjahr vollenden. 
     </p>
     <div class="mt-8">
         <img class="mx-auto" src="#" alt="Alte Herren Mannschaftsfoto">

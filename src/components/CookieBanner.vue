@@ -1,11 +1,11 @@
 <template>
     <div class="cookie-banner p-4 bg-ascBlue text-white opacity-90">
         <div v-if="!displayDetails">
-            <h1 class="text-sm md:text-xl">Wir benötigen Ihre Zustimmung</h1>
-            <p class="text-sm md:text-lg">Unsere Webseite nutzt Dienste Dritter (Bayrischer Fussball-Verband), um Ihnen ein besseres Angebot bieten zu können. Sie können uns die 
-                Nutzung dieser Dienste erlauben oder nur notwendige Datenverarbeitungen akzeptieren. Ihre Einwilligung können Sie 
-                jederzeit über Datenschutzeinstellungen anpassen unten auf der Webseite widerrufen.
-                Klicken sie auf Details, um mehr Informationen zu erhalten.
+            <h1 class="text-sm md:text-xl">Wir benötigen deine Zustimmung</h1>
+            <p class="text-sm md:text-lg">Unsere Webseite nutzt Dienste Dritter (Bayrischer Fussball-Verband), um dir ein besseres Angebot bieten zu können. Du kannst uns die 
+                Nutzung dieser Dienste erlauben oder nur notwendige Datenverarbeitungen akzeptieren. Deine Einwilligung kannst du 
+                jederzeit über die Datenschutzeinstellungen unten auf der Webseite widerrufen.
+                Klicke auf Details, um mehr Informationen zu erhalten.
             </p>
             <div class="flex justify-center">
                 <button v-on:click="handleClick(true)">Cookies zustimmen</button>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { defineEmits, ref } from 'vue';
+import { ref } from 'vue';
 import CookieDetails from './CookieDetails.vue';
 const emit = defineEmits();
 
