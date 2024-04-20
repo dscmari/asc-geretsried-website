@@ -11,7 +11,7 @@
         dass die Spieler im aktuellen Kalenderjahr mindestens das 32. Lebensjahr vollenden. 
     </p>
     <div class="mt-8">
-        <img class="mx-auto" src="#" alt="Alte Herren Mannschaftsfoto">
+        <img class="mx-auto" src="/images/ah_badquality.jpeg" alt="Alte Herren Mannschaftsfoto">
     </div>
     <div>
         <h1 id="league-1" class="p-4 pb-0 lg:pt-16 lg:pl-0 text-lg font-semibold text-ascBlue">Liga & Tabelle</h1>
