@@ -10,36 +10,42 @@
     </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
 import CookieBanner from '../CookieBanner.vue';
 
-const showCookieBanner = ref(false)
-
-const props = defineProps({
-    widgetTableConfig: Object
-});
-
-const checkAndShowWidget = () => {
-    const cookiesAllowed = localStorage.getItem('cookiesAllowed');
-
-    if (cookiesAllowed === 'true') {
-        BFVWidget.HTML5.zeigeWettbewerbsTabelle(props.widgetTableConfig.tableId, props.widgetTableConfig.widgetId, { 
-            height: "100%",  
-            width: "100%", 
-            teamPermanentId: props.widgetTableConfig.teamPermanentId, 
-            colorResults: "undefined", 
-            colorNav: "", 
-            colorClubName: "#002166", 
-            backgroundNav: ""
-        });
+export default{
+    components:{
+        CookieBanner
+    },
+    props:{
+        widgetTableConfig: Object
+    },
+    data(){
+        return{
+            showCookieBanner: false
+        }
+    },
+    methods:{
+        checkAndShowWidget(){
+            const cookiesAllowed = localStorage.getItem('cookiesAllowed');
+            if (cookiesAllowed === 'true') {
+                BFVWidget.HTML5.zeigeWettbewerbsTabelle(this.widgetTableConfig.tableId, this.widgetTableConfig.widgetId, { 
+                    height: "100%",  
+                    width: "100%", 
+                    teamPermanentId: this.widgetTableConfig.teamPermanentId, 
+                    colorResults: "undefined", 
+                    colorNav: "", 
+                    colorClubName: "#002166", 
+                    backgroundNav: ""
+                });
+            }
+        },
+        displayCookieBanner(){
+            this.showCookieBanner = true
+        }
+    },
+    mounted(){
+        this.checkAndShowWidget()
     }
-};
-
-const displayCookieBanner = () => {
-    console.log("testio")
-    showCookieBanner.value = true
-};
-
-onMounted(checkAndShowWidget);
+}
 </script>

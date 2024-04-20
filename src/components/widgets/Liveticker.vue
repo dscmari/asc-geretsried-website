@@ -10,34 +10,44 @@
     </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
 import CookieBanner from '../CookieBanner.vue';
 
-const showCookieBanner = ref(false)
-
-function displayCookieBanner(){
-    showCookieBanner.value = true
-}
-
-const checkAndShowWidget = () => {
-    const cookiesAllowed = localStorage.getItem('cookiesAllowed');
-    if (cookiesAllowed === 'true') {
-        BFVWidget.HTML5.zeigeMannschaftsLiveticker(
-            "01S7PPNEG8000000VS548984VTJ68QLL",
-            "01S9OK0ABK000000VS548984VTL2SVNK",
-            "bfv1713090614892",
-            {
-                height: "100%",
-                width: "100%",
-                colorResults: "undefined",
-                colorNav: "undefined",
-                colorClubName: "undefined",
-                backgroundNav: "undefined"
+export default{
+    components:{
+        CookieBanner
+    },
+    data(){
+        return{
+            showCookieBanner: false
+        }
+    },
+    methods:{
+        checkAndShowWidget(){
+            const cookiesAllowed = localStorage.getItem('cookiesAllowed');
+            if (cookiesAllowed === 'true') {
+                BFVWidget.HTML5.zeigeMannschaftsLiveticker(
+                    "01S7PPNEG8000000VS548984VTJ68QLL",
+                    "01S9OK0ABK000000VS548984VTL2SVNK",
+                    "bfv1713090614892",
+                    {
+                        height: "100%",
+                        width: "100%",
+                        colorResults: "undefined",
+                        colorNav: "undefined",
+                        colorClubName: "undefined",
+                        backgroundNav: "undefined"
+                    }
+                );
             }
-        );
+        },
+        displayCookieBanner(){
+            this.showCookieBanner = true
+        }
+
+    },
+    mounted(){
+        this.checkAndShowWidget()
     }
 }
-
-onMounted(checkAndShowWidget)
 </script>

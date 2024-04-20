@@ -10,26 +10,43 @@
     </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
 import CookieBanner from '../CookieBanner.vue';
 
-const showCookieBanner = ref(false);
-
-const props = defineProps({
-    widgetGamesConfig: Object
-});
-
-const checkAndShowWidget = () => {
-    const cookiesAllowed = localStorage.getItem('cookiesAllowed');
-    if (cookiesAllowed === 'true') {
-        BFVWidget.HTML5.zeigeMannschaftKomplett(props.widgetGamesConfig.teamId, props.widgetGamesConfig.widgetId, { height: "100%", width: "100%", selectedTab: BFVWidget.HTML5.mannschaftTabs.spiele, colorResults: "undefined", colorNav: "undefined", colorClubName: "#002166", backgroundNav: "undefined" });
+export default {
+    components: {
+        CookieBanner
+    },
+    props: {
+        widgetGamesConfig: Object
+    },
+    data() {
+        return {
+            showCookieBanner: false
+        };
+    },
+    methods: {
+        checkAndShowWidget() {
+            const cookiesAllowed = localStorage.getItem('cookiesAllowed');
+            if (cookiesAllowed === 'true') {
+                BFVWidget.HTML5.zeigeMannschaftKomplett(this.widgetGamesConfig.teamId, this.widgetGamesConfig.widgetId, { 
+                    height: "100%", 
+                    width: "100%", 
+                    selectedTab: BFVWidget.HTML5.mannschaftTabs.spiele, 
+                    colorResults: "undefined", 
+                    colorNav: "undefined", 
+                    colorClubName: "#002166", 
+                    backgroundNav: "undefined" 
+                });
+            }
+        },
+        displayCookieBanner() {
+            this.showCookieBanner = true;
+        }
+    },
+    mounted() {
+        this.checkAndShowWidget();
     }
 };
-
-const displayCookieBanner = () => {
-    showCookieBanner.value = true
-};
-
-onMounted(checkAndShowWidget);
 </script>
+
