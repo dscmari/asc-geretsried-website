@@ -1,7 +1,7 @@
 
 <template>
   <div class="mt-8">
-    <img src="images/season_2425/mannschaftsfoto_jubel_asc12_2425.jpg" alt="ASC Team 1 und Team 2 gemeinsam jubelnd">
+    <img src="/images/season_2425/mannschaftsfoto_jubel_asc12_2425.jpg" alt="ASC Team 1 und Team 2 gemeinsam jubelnd">
   </div>
 
   <div class="p-4">
