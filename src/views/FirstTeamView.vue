@@ -4,7 +4,7 @@
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Erste Mannschaft</h1>
     </div>
     <div>
-        <img src="/images/erste-mannschaft_optimiert.jpg" alt="erste mannschaft">
+        <img src="/images/24-25/mannschaftsfoto_asc1_24-25.jpg" alt="erste mannschaft">
     </div>
 
     <div>
@@ -25,9 +25,10 @@
                 <table>
                     <thead><tr>Coaches:</tr></thead>
                     <tbody>
-                        <tr><td>Anastasios Lasidis</td></tr>
-                        <tr><td>Cem Acikbas</td></tr>
-                        <tr><td>Rico Krillmäurer</td></tr>
+                        <tr><td>Anastasios Lasidis (Spielertrainer)</td></tr>
+                        <tr><td>Cem Acikbas (Trainer)</td></tr>
+                        <tr><td>Rico Krillmäurer (Co-Trainer)</td></tr>
+                        <tr><td>Kevin Rehmann (TW-Trainer)</td></tr>
                     </tbody> 
                 </table>
             </div>
@@ -36,8 +37,7 @@
                 <table>
                     <thead><tr>Torhüter:</tr></thead>
                     <tbody>
-                        <tr><td>Kevin Rehmann</td></tr>
-                        <tr><td>Daniel Verhas</td></tr>
+                        <tr><td>Phil Malzacher</td></tr>
                     </tbody> 
                 </table>
             </div>
@@ -49,8 +49,8 @@
                         <tr><td>Florian Krone</td></tr>
                         <tr><td>Florian Meindl</td></tr>
                         <tr><td>Kristian Derek</td></tr>
+                        <tr><td>Jordanis Michos</td></tr>
                         <tr><td>Marius Wedderwille</td></tr>
-                        <tr><td>Phil Malzacher</td></tr>
                         <tr><td>Phillip Willwohl</td></tr>
                     </tbody> 
                 </table>
@@ -61,17 +61,16 @@
                     <thead><tr>Mittelfeld:</tr></thead>
                     <tbody>
                         <tr><td>Alexander Kutzmutz</td></tr>
-                        <tr><td>Alexandros Tastemiroglou</td></tr>
                         <tr><td>Altin Gajtani</td></tr>
                         <tr><td>Andreas Knobloch</td></tr>
                         <tr><td>Andreas Zimolong</td></tr>
-                        <tr><td>Anton Feiler</td></tr>
                         <tr><td>Christian Sacher</td></tr>
                         <tr><td>Jordanis Michos</td></tr>
-                        <tr><td>Paul Karamanos</td></tr>
+                        <tr><td>Rafael Sablonski</td></tr>
                         <tr><td>Rilind Sadiku</td></tr>
                         <tr><td>Sebastian Philp</td></tr>
                         <tr><td>Stavro Iosifoglou</td></tr>
+                        <tr><td>Theodoros Mastoridis</td></tr>
                         <tr><td>Thomas Philp</td></tr>
                     </tbody> 
                 </table>
@@ -82,9 +81,10 @@
                     <thead><tr>Sturm:</tr></thead>
                     <tbody>
                         <tr><td>Anastasios Lasidis</td></tr>
+                        <tr><td>Daniel Zielinski</td></tr>
                         <tr><td>Lukas Steer</td></tr>
-                        <tr><td>Panagiotis Zormpas</td></tr>
-                        <tr><td>Pascal Paringer</td></tr>
+                        <tr><td>Mike Ongerth</td></tr>
+                        <tr><td>Paul Karamanos</td></tr>
                         <tr><td>Raphael Paringer</td></tr>
                     </tbody> 
                 </table>
@@ -132,9 +132,9 @@ const widgetGamesConfig = {
 };
 
 const widgetTableConfig = {
-    tableId: "02NCFUG1VC000006VS5489B4VSM2QTLD-G",
-    widgetId: "bfv1713087355092",
-    teamPermanentId: "02IDHF83IG000000VS5489B2VU2I8R4H"
+    tableId: "02PEHFL87800001RVS5489B4VU56U9AA-G",
+    widgetId: "bfv1722591156688",
+    teamPermanentId: "01S9OK0ABK000000VS548984VTL2SVNK"
 }
 
 </script>

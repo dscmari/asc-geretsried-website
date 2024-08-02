@@ -1,7 +1,7 @@
 
 <template>
   <div class="mt-8">
-    <img src="/images/aufstieg_2023_optimiert.jpg" alt="">
+    <img src="images/24-25/mannschaftsfoto_jubel_asc12_24-25.jpg" alt="ASC Team 1 und Team 2 gemeinsam jubelnd">
   </div>
 
   <div class="p-4">
