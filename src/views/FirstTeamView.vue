@@ -51,6 +51,7 @@
                         <tr><td>Kristian Derek</td></tr>
                         <tr><td>Jordanis Michos</td></tr>
                         <tr><td>Marius Wedderwille</td></tr>
+                        <tr><td>Miklos Tot</td></tr>
                         <tr><td>Phillip Willwohl</td></tr>
                     </tbody> 
                 </table>
@@ -61,11 +62,12 @@
                     <thead><tr>Mittelfeld:</tr></thead>
                     <tbody>
                         <tr><td>Alexander Kutzmutz</td></tr>
+                        <tr><td>Alexander Reiter</td></tr>
                         <tr><td>Altin Gajtani</td></tr>
                         <tr><td>Andreas Knobloch</td></tr>
                         <tr><td>Andreas Zimolong</td></tr>
+                        <tr><td>Johannes Kerwien</td></tr>
                         <tr><td>Christian Sacher</td></tr>
-                        <tr><td>Jordanis Michos</td></tr>
                         <tr><td>Rafael Sablonski</td></tr>
                         <tr><td>Rilind Sadiku</td></tr>
                         <tr><td>Sebastian Philp</td></tr>
@@ -83,6 +85,7 @@
                         <tr><td>Anastasios Lasidis</td></tr>
                         <tr><td>Daniel Zielinski</td></tr>
                         <tr><td>Lukas Steer</td></tr>
+                        <tr><td>Michael Freier</td></tr>
                         <tr><td>Mike Ongerth</td></tr>
                         <tr><td>Paul Karamanos</td></tr>
                         <tr><td>Raphael Paringer</td></tr>
