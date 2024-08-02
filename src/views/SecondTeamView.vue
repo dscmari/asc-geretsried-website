@@ -4,7 +4,7 @@
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Zweite Mannschaft</h1>
     </div>
     <div>
-        <img src="/images/24-25/mannschaftsfoto_asc2_24-25.jpg" alt="zweite mannschaft">
+        <img src="/images/season_2425/mannschaftsfoto_asc2_2425.jpg" alt="zweite mannschaft">
     </div>
 
     <div>
