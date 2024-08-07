@@ -27,7 +27,7 @@
                     <tbody>
                         <tr><td>Anastasios Lasidis (Spielertrainer)</td></tr>
                         <tr><td>Cem Acikbas (Trainer)</td></tr>
-                        <tr><td>Rico Krillmäurer (Co-Trainer)</td></tr>
+                        <tr><td>Rico Krillmäuer (Co-Trainer)</td></tr>
                         <tr><td>Kevin Rehmann (TW-Trainer)</td></tr>
                     </tbody> 
                 </table>
