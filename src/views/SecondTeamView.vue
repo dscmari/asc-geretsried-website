@@ -4,7 +4,7 @@
         <h1 class="p-4 text-2xl font-semibold text-ascBlue">Zweite Mannschaft</h1>
     </div>
     <div>
-        <img src="/images/season_2425/mannschaftsfoto_asc2_2425.jpg" alt="zweite mannschaft">
+        <img src="/images/season_2526/mannschaftsfoto_asc2_2526.jpg" alt="zweite mannschaft">
     </div>
 
     <div>
@@ -44,13 +44,14 @@
                 <table>
                     <thead><tr>Verteidigung:</tr></thead>
                     <tbody>
+                        <tr><td>Alexandros Karasakalidis</td></tr>  
                         <tr><td>Christian Wohlan</td></tr>
-                        <tr><td>Dominik Schwarz</td></tr>
+                        <tr><td>Daniel Hecher</td></tr>
                         <tr><td>Julian Baak</td></tr>
-                        <tr><td>Luca Cavaliere</td></tr>
-                        <tr><td>Maximilian Westermeyr</td></tr>
-                        <tr><td>Nicolas Engels</td></tr>
-                        <tr><td>Panagiotis Athanasiadis</td></tr>  
+                        <tr><td>Marc Hemmer</td></tr>
+                        <tr><td>Marco Coban</td></tr>
+                        <tr><td>Marijan Mucak</td></tr>
+                  
                     </tbody> 
                 </table>
             </div>
@@ -59,16 +60,12 @@
                 <table>
                     <thead><tr>Mittelfeld:</tr></thead>
                     <tbody>
-                        <tr><td>Alan Mohamad</td></tr>
-                        <tr><td>Alexander Wenus</td></tr>
-                        <tr><td>Alexandros Karasakalidis</td></tr>
-                        <tr><td>Christoph Ruben</td></tr>
+                        <tr><td>Daniel Diew</td></tr>               
                         <tr><td>Luis Gatzka</td></tr>
-                        <tr><td>Lukas Fleischer</td></tr>
+                        <tr><td>Maximilian Westermeyr </td></tr>
                         <tr><td>Mike Ongerth</td></tr>
+                        <tr><td>Paride Loreto</td></tr>
                         <tr><td>Patrick Hemmer</td></tr>
-                        <tr><td>Rafael Sablonski</td></tr>
-                        <tr><td>Rico Krillmäuer</td></tr>
                         <tr><td>Robert Haltmaier</td></tr>
                         <tr><td>Simon Kriest</td></tr>
                         <tr><td>Stavros Karassakalidis</td></tr>
@@ -80,12 +77,11 @@
                 <table>
                     <thead><tr>Sturm:</tr></thead>
                     <tbody>
-                        <tr><td>Daniel Hecher</td></tr>
-                        <tr><td>Javid Kassam</td></tr>
+                        <tr><td>Christoph Ruben</td></tr>
+                        <tr><td>Gery Cejka</td></tr>
                         <tr><td>Korbinian Beigel</td></tr>
                         <tr><td>Manuel Schneider</td></tr>
                         <tr><td>Rene Hammer</td></tr>
-                    
                     </tbody> 
                 </table>
             </div>
@@ -134,8 +130,8 @@ const widgetGamesConfig = {
 };
 
 const widgetTableConfig = {
-    tableId: "02PKSQIBNC000004VS5489B3VSSIBR6U-G",
-    widgetId: "bfv1722591585093",
+    tableId: "02T871LKLG00005DVS5489BUVS2EIKP3-G",
+    widgetId: "bfv1758790531659",
     teamPermanentId: "02IDHF83IG000000VS5489B2VU2I8R4H"
 }
 
